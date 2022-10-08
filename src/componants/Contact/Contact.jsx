@@ -55,6 +55,7 @@ export default function Contact() {
     async function registerContactForm(e) {
 
         e.preventDefault();
+        setLoadind(true);
         let {data} = await axios({
             method: 'post',
             url: 'http://66.29.139.205/zarimain/public/api/contact',
@@ -104,19 +105,19 @@ export default function Contact() {
                                 <form encType="multipart/form-data" onSubmit={registerContactForm} className="p-5 form">
 
                                     <label className="mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="Name">{isEng ? 'Full Name' : 'الإســــم كامــل'}</label>
-                                    <input onChange={getUserData} type="text" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" name="Name" id="Name"/>
+                                    <input onChange={getUserData} type="text" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="Name" id="Name"/>
 
                                     <label className=" second-input mt-2 mb-1 wow fadeInRight" data-wow-duration="1.5s" htmlFor="Email">{isEng ? 'Email Address' : 'البريــد الإلكترونــــي'}</label>
-                                    <input onChange={getUserData} type="email" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" name="Email" id="Email"/>
+                                    <input onChange={getUserData} type="email" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" required name="Email" id="Email"/>
 
                                     <label className=" mt-2 mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="Phone">{isEng ? 'Phone Number' : 'رقــم الهاتـــف'}</label>
-                                    <input onChange={getUserData} type="tel" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" name="Phone" id="Phone"/>
+                                    <input onChange={getUserData} type="tel" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="Phone" id="Phone"/>
 
                                     <label className="mt-2 mb-1 wow fadeInRight" data-wow-duration="1.5s" htmlFor="Subject">{isEng ? 'Subject' : 'الموضــوع'}</label>
-                                    <input onChange={getUserData} type="text" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" name="Subject" id="Subject"/>
+                                    <input onChange={getUserData} type="text" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" required name="Subject" id="Subject"/>
 
                                     <label className=" mt-2 mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="Message">{isEng ? 'Message' : 'رســالة'}</label>
-                                    <textarea name="Message" onChange={getUserData} id="Message" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" cols="30" rows="5"></textarea>
+                                    <textarea name="Message" onChange={getUserData} id="Message" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" cols="30" rows="5" required></textarea>
 
                                     {message.length > 0 ? <p id="alertSave" className={`alert ${message === 'Success Send Data' || message === 'تم ارسال البيانات بنجاح' ? 'alert-success' : 'alert-danger'} fs-6 py-2 mb-0 mt-3 w-50 text-center mx-auto`}>{message}</p> : ''}
 

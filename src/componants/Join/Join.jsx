@@ -115,52 +115,52 @@ export default function Project() {
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
                                         <label className=" second-input mb-1" htmlFor="LastName">{isEng ? 'Last Name' : 'إســــم العائلــــة'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="LastName" id="LastName"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="LastName" id="LastName"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="Phone">{isEng ? 'Phone Number' : 'رقــم الهاتـــف'}</label>
-                                        <input onChange={getUserData} type="tel" className="form-control p-2" name="Phone" id="Phone"/>
+                                        <input onChange={getUserData} type="tel" className="form-control p-2" required name="Phone" id="Phone"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="Email">{isEng ? 'Email Address' : 'البريــد الإلكترونــــي'}</label>
-                                        <input onChange={getUserData} type="email" className="form-control p-2" name="Email" id="Email"/>
+                                        <input onChange={getUserData} type="email" className="form-control p-2" required name="Email" id="Email"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="Job">{isEng ? 'Job Position' : 'الوظيـفــة'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="Job" id="Job"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="Job" id="Job"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="Experience">{isEng ? 'Experience Level' : 'مستـــوي الخبـــرة'}</label>
-                                        <input onChange={getUserData} type="number" className="form-control p-2" name="Experience" id="Experience"/>
+                                        <input onChange={getUserData} type="number" className="form-control p-2" required name="Experience" id="Experience"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="Country">{isEng ? 'Country' : 'البلـــد'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="Country" id="Country"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="Country" id="Country"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="City">{isEng ? 'City' : 'المدينــــة'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="City" id="City"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="City" id="City"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="JobTitle">{isEng ? 'Current Job Title' : 'المسمــي الوظيفـــي الحالـــي'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="JobTitle" id="JobTitle"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="JobTitle" id="JobTitle"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="CompanyName">{isEng ? 'Current Company Name' : 'إســـم الشركة'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="CompanyName" id="CompanyName"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="CompanyName" id="CompanyName"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="CV">{isEng ? 'CV' : 'السيـــرة الذاتيــــة'}</label>
-                                        <input onChange={getUserData} type="file" className="form-control p-2 mb-2" multiple name="CV" id="CV"/>
+                                        <input onChange={getUserData} type="file" className="form-control p-2 mb-2" required multiple name="CV" id="CV"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">

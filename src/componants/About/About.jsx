@@ -139,7 +139,7 @@ export default function About({fetchAbout}) {
                                 <p className="mb-2 py-1 parag-1">{isEng ? fetchAbout.top.text : fetchAbout.top.textAr}</p>
                                 <p className="mb-4 py-1 parag-2">{isEng ? fetchAbout.top.text2 : fetchAbout.top.text2Ar}</p>
                                 <div className="mission-goals d-flex justify-content-center align-items-center">
-                                    <div className="d-flex flex-column w-75 me-3">
+                                    <div className={`d-flex flex-column ${isEng ? 'w-75' : 'w-25'} me-3`}>
                                         <h6 className="ps-2 py-2 mission mb-3">{isEng ? fetchAbout.mission.header : fetchAbout.mission.headerAr}</h6>
                                         <h6 className="m-0 ps-2 py-2 goals">{isEng ? fetchAbout.mission.title : fetchAbout.mission.titleAr}</h6>
                                     </div>
