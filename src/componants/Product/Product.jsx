@@ -11,6 +11,9 @@ import axios from 'axios';
 
 export default function Product() {
 
+    let baseURL = 'https://sixpack.matsuda.host';
+
+
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
 
@@ -53,7 +56,7 @@ export default function Product() {
     const [fetchProductData, setFetchProductData] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://66.29.139.205/zarimain/public/api/product/${id}`)
+        axios.get(`${baseURL}/zarimain/public/api/product/${id}`)
         .then((res) => {
             setFetchProductData(res.data);
         })

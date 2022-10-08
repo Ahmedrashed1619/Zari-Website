@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import imgLogo from '../images/logo w 1.png'
+import imgLogo from '../images/logo w 1.png';
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { langContext } from '../context/store';

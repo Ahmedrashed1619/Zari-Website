@@ -11,6 +11,9 @@ import axios from 'axios';
 
 export default function Service() {
 
+    let baseURL = 'https://sixpack.matsuda.host';
+
+
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
 
@@ -36,7 +39,7 @@ export default function Service() {
     const [fetchServiceData, setFetchServiceData] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://66.29.139.205/zarimain/public/api/service/${id}`)
+        axios.get(`${baseURL}/zarimain/public/api/service/${id}`)
         .then((res) => {
             setFetchServiceData(res.data);
         })
