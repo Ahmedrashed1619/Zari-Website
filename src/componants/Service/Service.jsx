@@ -53,7 +53,7 @@ export default function Service() {
     return  fetchServiceData !== null ? ( <>
 
         {/* header */}
-        <header id="serviceSingle" className="serviceSingle-page main-img-bg">
+        <header id="serviceSingle" className="serviceSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'}>
             <div className="total-header layer-img d-flex justify-content-center align-items-center">
                 <div className="container">
                     <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

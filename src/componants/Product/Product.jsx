@@ -71,7 +71,7 @@ export default function Product() {
         {Object.keys(fetchProductData).length > 0  ? <>
 
             {/* header */}
-            <header id="productSingle" className="productSingle-page main-img-bg">
+            <header id="productSingle" className="productSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'}>
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

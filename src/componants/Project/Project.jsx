@@ -56,7 +56,7 @@ export default function Project() {
             {Object.keys(fetchProjectData).length > 0 ?  <>
 
                 {/* header */}
-                <header id="projectSingle" className="projectSingle-page main-img-bg">
+                <header id="projectSingle" className="projectSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'}>
                     <div className="total-header layer-img d-flex justify-content-center align-items-center">
                         <div className="container">
                             <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

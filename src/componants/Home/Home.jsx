@@ -528,7 +528,7 @@ export default function Home({ fetchHome }) {
           <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
             <div className="col-12">
               <div className="main-title text-center pt-3 w-75 mx-auto">
-                <p className="mx-auto text-black fw-bold fs-5">{isEng ? 'Trusted by over +550 happy client text-centers, Including.' : '.شركـــاء نجـاحنــــا'}</p>
+                <p className="mx-auto text-black fw-bold fs-5">{isEng ? 'Trusted by over +550 happy client text-centers, Including' : 'شركـــاء نجـاحنــــا'}</p>
               </div>
             </div>
             <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" {...clients}>
@@ -678,41 +678,6 @@ export default function Home({ fetchHome }) {
                   </div>
                 </div>
             ))}
-            {/* <div className="col-lg-4">
-              <div className="part wow fadeInLeft" data-wow-duration="1.5s">
-                <img src={Rectangle1} className="w-100 mb-3" alt="Rectangle" />
-                <div className="caption-part">
-                  <p className="text-black fs-5 lh-sm">Request your technical project from our team and get a
-                    confidentiality agreement</p>
-                  <div className="buttons mt-2 first-card">
-                    <Link to="../Contact" className="btn second-btn py-3 px-5">Contact Us</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="part wow fadeInUp" data-wow-duration="1.5s">
-                <img src={Rectangle2} className="w-100 mb-4" alt="Rectangle" />
-                <div className="caption-part">
-                  <p className="text-black fs-5 lh-sm">Request one of our cleaning services and our team will
-                    contact you</p>
-                  <div className="buttons mt-4 second-card">
-                    <Link to="../Contact" className="btn second-btn py-3 px-5">Contact Us</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="part wow fadeInRight" data-wow-duration="1.5s">
-                <img src={Rectangle3} className="w-100 mb-3" alt="Rectangle" />
-                <div className="caption-part">
-                  <p className="text-black fs-5 lh-sm">Request your technical or marketing advice</p>
-                  <div className="buttons last-card">
-                    <Link to="../Contact" className="btn second-btn py-3 px-5">Contact Us</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

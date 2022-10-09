@@ -169,7 +169,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                             <li className="nav-item dropdown">
                                 <NavLink className="nav-link dropdown-toggle projects-link" to="projects" role="button"
                                     aria-expanded="false">
-                                    {isEng ? 'Projects' : 'المشروعــات'}
+                                    {isEng ? 'Projects' : 'المشـاريـع'}
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.projects.map((project, i) => (
