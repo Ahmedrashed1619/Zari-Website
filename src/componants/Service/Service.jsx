@@ -11,7 +11,7 @@ import axios from 'axios';
 
 export default function Service() {
 
-    let baseURL = 'https://sixpack.matsuda.host';
+    let baseURL = 'https://zarimain.online/public/api/';
 
 
     useEffect(() => {
@@ -39,7 +39,7 @@ export default function Service() {
     const [fetchServiceData, setFetchServiceData] = useState(null);
 
     useEffect(() => {
-        axios.get(`${baseURL}/zarimain/public/api/service/${id}`)
+        axios.get(`${baseURL}service/${id}`)
         .then((res) => {
             setFetchServiceData(res.data);
         })

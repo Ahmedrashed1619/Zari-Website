@@ -2386,6 +2386,96 @@ video {
 }
 
 
+/* get app section */
+
+.main-btn-p {
+  background-color: #FFCF00;
+  /* color: #fff; */
+  border: 1px solid #FFCF00;
+}
+
+.main-btn-p:hover {
+  background-color: transparent;
+  color: #FFCF00;
+}
+
+.second-btn-p {
+  background-color: transparent;
+  color: #FFCF00;
+  border: 1px solid #FFCF00;
+}
+
+.second-btn-p:hover {
+  background-color: #FFCF00;
+  color: #fff;
+}
+
+.parag>p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.parag .app {
+  /* font-size: 18px; */
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.client a,
+.manager a {
+  width: 55%;
+}
+
+.img-apps img {
+  width: 80%;
+  transition: all 0.5s;
+}
+
+.img-apps img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Responsive */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .img-apps img {
+      width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .client a,
+  .manager a {
+      width: 28% !important;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .get .main-title,
+  .img-apps {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .img-apps img {
+      width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .client a,
+  .manager a {
+      width: 50% !important;
+  }
+}
+
+
 /* join page */
 
 form, .form{

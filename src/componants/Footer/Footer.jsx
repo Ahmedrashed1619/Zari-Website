@@ -107,7 +107,7 @@ export default function Footer() {
                                         <NavLink className="nav-link projects-link" to="projects">{isEng ? 'Projects' : 'المشـاريـع'}</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link previous" to="previous">{isEng ? 'Previous' : 'الأعمال السابقة'}</NavLink>
+                                        <NavLink className="nav-link previous" to="previous">{isEng ? 'Works' : 'الأعمال السابقة'}</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link contact" to="contact">{isEng ? 'Contact Us' : 'تواصل معنا'}</NavLink>

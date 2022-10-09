@@ -164,15 +164,25 @@ export default function Home({ fetchHome }) {
 
 
   useEffect(() => {
-    if ($('.caption-details h2').text() === 'Zari Express') {
+    // if ($('.caption-details h2').text() === 'Zari Express') {
+    //   if(isEng === true) {
+    //       $('.caption-details p').text(`Zari Express is one of the projects of Zari Company, a Saudi-Egyptian company Present in Saudi Arabia since 2014.Zari Express aims to spread the Egyptian industry in Saudi Arabia and the Gulf.`);
+    //   }
+    //   else{
+    //       $('.caption-details p').text(`Zari Express هو أحد مشاريع شركة Zari ، وهي شركة سعودية مصرية موجودة في المملكة العربية السعودية منذ عام 2014 ، وتهدف Zari Express إلى نشر الصناعة المصرية في المملكة العربية السعودية والخليج.`);
+    //   }
+    //   $('.show-details .buttons a').attr('href', '#/projects/4');
+    // }
+
+    if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
       if(isEng === true) {
-          $('.caption-details p').text(`Zari Express is one of the projects of Zari Company, a Saudi-Egyptian company Present in Saudi Arabia since 2014.Zari Express aims to spread the Egyptian industry in Saudi Arabia and the Gulf.`);
+          $('.caption-details p').text(fetchHome.projects.date[0].text);
       }
       else{
-          $('.caption-details p').text(`Zari Express هو أحد مشاريع شركة Zari ، وهي شركة سعودية مصرية موجودة في المملكة العربية السعودية منذ عام 2014 ، وتهدف Zari Express إلى نشر الصناعة المصرية في المملكة العربية السعودية والخليج.`);
+          $('.caption-details p').text(fetchHome.projects.date[0].textAr);
       }
-      $('.show-details .buttons a').attr('href', '#/projects/4');
-  }
+      $('.show-details .buttons a').attr('href', '#/projects/1');
+    }
   
   }, [])
   
@@ -318,58 +328,58 @@ export default function Home({ fetchHome }) {
   }, [isEng]);
 
 
-  useEffect(() => {
-    $('.imgs .img-group').click(function () {
-        let clickSrc = $(this).children('img').attr('src');
-        let clickTitle = $(this).children('h4').text();
-        $('.img-details img').attr('src', clickSrc);
-        $('.caption-details h2').text(clickTitle);
-        changeDetails();
-    })
+//   useEffect(() => {
+//     $('.imgs .img-group').click(function () {
+//         let clickSrc = $(this).children('img').attr('src');
+//         let clickTitle = $(this).children('h4').text();
+//         $('.img-details img').attr('src', clickSrc);
+//         $('.caption-details h2').text(clickTitle);
+//         changeDetails();
+//     })
 
-    const changeDetails = () => {
-        if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
-            if(isEng === true) {
-                $('.caption-details p').text(fetchHome.projects.date[0].text);
-            }
-            else{
-              $('.caption-details p').text(fetchHome.projects.date[0].textAr);
-            }
-            $('.show-details .buttons a').attr('href', '#/projects/1');
-        }
+//     const changeDetails = () => {
+//         if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
+//             if(isEng === true) {
+//                 $('.caption-details p').text(fetchHome.projects.date[0].text);
+//             }
+//             else{
+//               $('.caption-details p').text(fetchHome.projects.date[0].textAr);
+//             }
+//             $('.show-details .buttons a').attr('href', '#/projects/1');
+//         }
     
-        else if ($('.caption-details h2').text() === fetchHome.projects.date[1].title || $('.caption-details h2').text() === fetchHome.projects.date[1].titleAr) {
-          if(isEng === true) {
-            $('.caption-details p').text(fetchHome.projects.date[1].text);
-          }
-          else{
-            $('.caption-details p').text(fetchHome.projects.date[1].textAr);
-          }
-          $('.show-details .buttons a').attr('href', '#/projects/2');
-        }
+//         else if ($('.caption-details h2').text() === fetchHome.projects.date[1].title || $('.caption-details h2').text() === fetchHome.projects.date[1].titleAr) {
+//           if(isEng === true) {
+//             $('.caption-details p').text(fetchHome.projects.date[1].text);
+//           }
+//           else{
+//             $('.caption-details p').text(fetchHome.projects.date[1].textAr);
+//           }
+//           $('.show-details .buttons a').attr('href', '#/projects/2');
+//         }
     
-        else if ($('.caption-details h2').text() === fetchHome.projects.date[2].title || $('.caption-details h2').text() === fetchHome.projects.date[2].titleAr) {
-          if(isEng === true) {
-            $('.caption-details p').text(fetchHome.projects.date[2].text);
-          }
-          else{
-            $('.caption-details p').text(fetchHome.projects.date[2].textAr);
-          }
-          $('.show-details .buttons a').attr('href', '#/projects/3');
-        }
+//         else if ($('.caption-details h2').text() === fetchHome.projects.date[2].title || $('.caption-details h2').text() === fetchHome.projects.date[2].titleAr) {
+//           if(isEng === true) {
+//             $('.caption-details p').text(fetchHome.projects.date[2].text);
+//           }
+//           else{
+//             $('.caption-details p').text(fetchHome.projects.date[2].textAr);
+//           }
+//           $('.show-details .buttons a').attr('href', '#/projects/3');
+//         }
     
-        else if ($('.caption-details h2').text() === fetchHome.projects.date[3].title || $('.caption-details h2').text() === fetchHome.projects.date[3].titleAr) {
-          if(isEng === true) {
-            $('.caption-details p').text(fetchHome.projects.date[3].text);
-          }
-          else{
-            $('.caption-details p').text(fetchHome.projects.date[3].textAr);
-          }
-          $('.show-details .buttons a').attr('href', '#/projects/4');
-        }
-    }
+//         else if ($('.caption-details h2').text() === fetchHome.projects.date[3].title || $('.caption-details h2').text() === fetchHome.projects.date[3].titleAr) {
+//           if(isEng === true) {
+//             $('.caption-details p').text(fetchHome.projects.date[3].text);
+//           }
+//           else{
+//             $('.caption-details p').text(fetchHome.projects.date[3].textAr);
+//           }
+//           $('.show-details .buttons a').attr('href', '#/projects/4');
+//         }
+//     }
     
-}, [isEng]);
+// }, [isEng]);
   
 
 
@@ -473,7 +483,7 @@ export default function Home({ fetchHome }) {
               <p className="mx-auto pb-0 mb-0">{isEng ? fetchHome.projects.title : fetchHome.projects.titleAr}</p>
             </div>
           </div>
-          <div className="w-85 mx-auto pb-3">
+          {/* <div className="w-85 mx-auto pb-3">
             <div className="cont-imgs">
               <div className="imgs d-flex justify-content-center align-items-start">
                 <div className="img-group d-flex flex-column text-center wow fadeInRight" data-wow-duration="1.5s">
@@ -497,23 +507,22 @@ export default function Home({ fetchHome }) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="show-details mt-5">
             <div className="w-85 mx-auto">
               <div className="row d-flex justify-content-center align-items-center">
                 <div className="col-8">
                   <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
-                    <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[3].title : fetchHome.projects.date[3].titleAr}</h2>
+                    <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h2>
                     <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"></p>
-                    {/* <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[3].text : fetchHome.projects.date[3].textAr}</p> */}
                     <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                      <a href={`#/projects/4`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                      <a href={`#/projects/1`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-4">
                   <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                    <img src={fetchHome.projects.date[3].image ? fetchHome.projects.date[3].image : zariExpress} className="mx-auto" alt="zari Express" />
+                    <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto" alt="zari Express" />
                   </div>
                 </div>
               </div>

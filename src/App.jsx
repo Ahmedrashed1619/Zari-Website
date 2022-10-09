@@ -25,7 +25,7 @@ import axios from 'axios';
 
 function App() {
 
-  let baseURL = 'https://sixpack.matsuda.host';
+  let baseURL = 'https://zarimain.online/public/api/';
 
 
     useEffect(() => {
@@ -46,7 +46,7 @@ function App() {
         // nav data 
         let [fetchNav, setFetchNav] = useState([]);
         async function getDataNav() {
-          await axios.get(`${baseURL}/zarimain/public/api/navpaths`)
+          await axios.get(`${baseURL}navpaths`)
             .then(res => {
               if (res.status === 200 && res.request.readyState === 4) {
                 setFetchNav(res.data);
@@ -66,7 +66,7 @@ function App() {
     // Home data 
     let [fetchHome, setFetchHome] = useState([]);
     async function getDataHome() {
-      await axios.get(`${baseURL}/zarimain/public/api/home`)
+      await axios.get(`${baseURL}home`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchHome(res.data);
@@ -86,7 +86,7 @@ function App() {
     // About data 
     let [fetchAbout, setFetchAbout] = useState([]);
     async function getDataAbout() {
-      await axios.get(`${baseURL}/zarimain/public/api/about`)
+      await axios.get(`${baseURL}about`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchAbout(res.data);
@@ -106,7 +106,7 @@ function App() {
     // Services data 
     let [fetchServices, setFetchServices] = useState([]);
     async function getDataServices() {
-      await axios.get(`${baseURL}/zarimain/public/api/services`)
+      await axios.get(`${baseURL}services`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchServices(res.data);
@@ -126,7 +126,7 @@ function App() {
     // Products data 
     let [fetchProducts, setFetchProducts] = useState([]);
     async function getDataProducts() {
-      await axios.get(`${baseURL}/zarimain/public/api/products`)
+      await axios.get(`${baseURL}products`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchProducts(res.data);
@@ -146,7 +146,7 @@ function App() {
     // Projects data 
     let [fetchProjects, setFetchProjects] = useState([]);
     async function getDataProjects() {
-      await axios.get(`${baseURL}/zarimain/public/api/projects`)
+      await axios.get(`${baseURL}projects`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchProjects(res.data);
@@ -166,7 +166,7 @@ function App() {
     // works data 
     let [fetchWorks, setFetchWorks] = useState([]);
     async function getDataWorks() {
-      await axios.get(`${baseURL}/zarimain/public/api/works`)
+      await axios.get(`${baseURL}works`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchWorks(res.data);
@@ -186,7 +186,7 @@ function App() {
     // faqs data
     let [fetchFaqs, setFetchFaqs] = useState([]);
     async function getDataFaqs() {
-      await axios.get(`${baseURL}/zarimain/public/api/faqs`)
+      await axios.get(`${baseURL}faqs`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchFaqs(res.data);
@@ -204,7 +204,7 @@ function App() {
     // policy data
     let [fetchPolicy, setFetchPolicy] = useState([]);
     async function getDataPolicy() {
-      await axios.get(`${baseURL}/zarimain/public/api/policies`)
+      await axios.get(`${baseURL}policies`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchPolicy(res.data);
@@ -222,7 +222,7 @@ function App() {
     // terms data
     let [fetchTerms, setFetchTerms] = useState([]);
     async function getDataTerms() {
-      await axios.get(`${baseURL}/zarimain/public/api/terms`)
+      await axios.get(`${baseURL}terms`)
         .then(res => {
           if (res.status === 200 && res.request.readyState === 4) {
             setFetchTerms(res.data);

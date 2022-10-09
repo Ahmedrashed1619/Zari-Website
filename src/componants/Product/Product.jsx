@@ -11,7 +11,7 @@ import axios from 'axios';
 
 export default function Product() {
 
-    let baseURL = 'https://sixpack.matsuda.host';
+    let baseURL = 'https://zarimain.online/public/api/';
 
 
     useEffect(() => {
@@ -56,7 +56,7 @@ export default function Product() {
     const [fetchProductData, setFetchProductData] = useState([]);
 
     useEffect(() => {
-        axios.get(`${baseURL}/zarimain/public/api/product/${id}`)
+        axios.get(`${baseURL}product/${id}`)
         .then((res) => {
             setFetchProductData(res.data);
         })
@@ -94,9 +94,9 @@ export default function Product() {
                                 <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Availability' : 'مدي التـوفــر'}: {isEng ? fetchProductData.product.availability : fetchProductData.product.availabilityAr}</h5>
                                 <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Category' : 'الفئــــة'}: {isEng ? fetchProductData.product.category : fetchProductData.product.categoryAr}</h5>
                                 <h5 className="fw-bold mb-4 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Tag' : 'التعـريـــف'}: {isEng ? fetchProductData.product.tag : fetchProductData.product.tagAr}</h5>
-                                <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                                {/* <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                                     <a href="#" className="btn black-btn py-3 px-5">{isEng ? 'Demo' : 'عـرض تجريبـــي'}</a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6">
