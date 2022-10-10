@@ -106,23 +106,23 @@ export default function Navbar({fetchNav , fetchProjects}) {
     });
 
 
-    const delay = {
-        0: '0.15s',
-        1: '0.3s',
-        2: '0.45s',
-        3: '0.6s',
-        4: '0.75s',
-        5: '0.9s',
-        6: '1.05s',
-        7: '1.2s',
-        8: '1.35s',
-        9: '1.5s',
-        10: '1.65s',
-        11: '1.8s',
-        12: '1.95s',
-        13: '2.1s',
-        14: '2.25s',
-    }
+    // const delay = {
+    //     0: '0.15s',
+    //     1: '0.3s',
+    //     2: '0.45s',
+    //     3: '0.6s',
+    //     4: '0.75s',
+    //     5: '0.9s',
+    //     6: '1.05s',
+    //     7: '1.2s',
+    //     8: '1.35s',
+    //     9: '1.5s',
+    //     10: '1.65s',
+    //     11: '1.8s',
+    //     12: '1.95s',
+    //     13: '2.1s',
+    //     14: '2.25s',
+    // }
 
 
 
@@ -151,7 +151,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.services.map((service, i) => (
-                                        <li key={i}><Link className={`dropdown-item wow fadeInUp ${isEng ? 'text-en' : 'text-ar'}`} data-wow-duration="0.5s" data-wow-delay={delay[i]} to={service.route}>{isEng ? service.title : service.titleAr}</Link></li>
+                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={service.route}>{isEng ? service.title : service.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
@@ -162,7 +162,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.products.map((product, i) => (
-                                        <li key={i}><Link className={`dropdown-item wow fadeInUp ${isEng ? 'text-en' : 'text-ar'}`} data-wow-duration="0.5s" data-wow-delay={delay[i]} to={product.route}>{isEng ? product.title : product.titleAr}</Link></li>
+                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={product.route}>{isEng ? product.title : product.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
@@ -173,7 +173,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.projects.map((project, i) => (
-                                        <li key={i}><Link className={`dropdown-item wow fadeInUp ${isEng ? 'text-en' : 'text-ar'}`} data-wow-duration="0.5s" data-wow-delay={delay[i]} to={project.route}>{isEng ? project.title : project.titleAr}</Link></li>
+                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={project.route}>{isEng ? project.title : project.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
