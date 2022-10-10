@@ -77,7 +77,10 @@ export default function Project() {
                                 </p>
                                 <p className="mb-5 py-1 text-black wow fadeIn" data-wow-duration="1s">{isEng ? fetchProjectData.project.text2 : fetchProjectData.project.text2Ar}
                                 </p>
-                                <img src={fetchProjectData.project.banner} className="mx-auto wow fadeInUp" data-wow-duration="1s" alt="Group"/>
+                                <div className="buttons text-center mb-5">
+                                        <a target='_blank' href='https://zariontime.com/' className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</a>
+                                </div>
+                                <img src={fetchProjectData.project.banner} className="mx-auto mt-5 wow fadeInUp" data-wow-duration="1s" alt="Group"/>
                             </div>
                         </div>
                     </div>
@@ -121,7 +124,7 @@ export default function Project() {
                             <div class="col-lg-4">
                                 <div class="manager text-center d-flex flex-column">
                                     <h4 class="mb-4 fw-bold">{isEng ? 'Zari on Time (Manager App)' : 'Zari on Time (تطبيق المدير)'}</h4>
-                                    <a href="#"
+                                    <a target="_blank" href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"
                                         class="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
                                         <i class={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                         <div class={`parag ${isEng ? 'text-start' : 'text-end'}`}>
