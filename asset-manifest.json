@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Zari-Website/static/css/main.723a79ed.css",
-    "main.js": "/Zari-Website/static/js/main.a613c202.js",
+    "main.js": "/Zari-Website/static/js/main.fd6fb0c4.js",
     "static/js/787.e0e709d5.chunk.js": "/Zari-Website/static/js/787.e0e709d5.chunk.js",
     "static/media/Rectangle 194.png": "/Zari-Website/static/media/Rectangle 194.f47cc5fc515a3167cc2c.png",
     "static/media/left.png": "/Zari-Website/static/media/left.2564e9881ea21acf5fae.png",
@@ -14,11 +14,7 @@
     "static/media/mobile app.png": "/Zari-Website/static/media/mobile app.55e4a3902b05e9bec79f.png",
     "static/media/404 Error Page not Found.png": "/Zari-Website/static/media/404 Error Page not Found.e4387f975d857989b085.png",
     "static/media/fa-regular-400.ttf": "/Zari-Website/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
-    "static/media/iPhone 12 Pro (1).png": "/Zari-Website/static/media/iPhone 12 Pro (1).813259b370188ce2440b.png",
-    "static/media/iPhone 12 Pro (2).png": "/Zari-Website/static/media/iPhone 12 Pro (2).cca4fd935714f6ab270f.png",
-    "static/media/iPhone 12 Pro (3).png": "/Zari-Website/static/media/iPhone 12 Pro (3).982fde4f4cca7d261d8e.png",
     "static/media/Group 32.png": "/Zari-Website/static/media/Group 32.496afbbc6bf60ee24e91.png",
-    "static/media/Questions-bro 1.png": "/Zari-Website/static/media/Questions-bro 1.f10b939fea922690821f.png",
     "static/media/fa-regular-400.woff2": "/Zari-Website/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
     "static/media/7.png": "/Zari-Website/static/media/7.c43d2a08f0c90601f15b.png",
     "static/media/1.png": "/Zari-Website/static/media/1.40fdc0af77db7f086120.png",
@@ -28,11 +24,11 @@
     "static/media/fa-v4compatibility.woff2": "/Zari-Website/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Zari-Website/index.html",
     "main.723a79ed.css.map": "/Zari-Website/static/css/main.723a79ed.css.map",
-    "main.a613c202.js.map": "/Zari-Website/static/js/main.a613c202.js.map",
+    "main.fd6fb0c4.js.map": "/Zari-Website/static/js/main.fd6fb0c4.js.map",
     "787.e0e709d5.chunk.js.map": "/Zari-Website/static/js/787.e0e709d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.723a79ed.css",
-    "static/js/main.a613c202.js"
+    "static/js/main.fd6fb0c4.js"
   ]
 }
