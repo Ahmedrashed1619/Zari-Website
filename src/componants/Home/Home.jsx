@@ -2,9 +2,6 @@ import React, { useContext } from 'react';
 import WOW from 'wowjs';
 import websiteDesign from '../images/home/website design.png';
 import mobileApp from '../images/home/mobile app.png';
-import zariOnTime from '../images/home/iPhone 12 Pro (1).png';
-import zariJumla from '../images/home/iPhone 12 Pro (2).png';
-import zariGifts from '../images/home/iPhone 12 Pro (3).png';
 import zariExpress from '../images/home/Group 32.png';
 import goDaddy from '../images/home/7.png';
 import year10 from '../images/home/5.png';
@@ -44,6 +41,10 @@ import { langContext } from '../context/store';
 // import Texmar1 from '../images/home/Texmar 1.png';
 // import Chrysler1 from '../images/home/Chrysler 1.png';
 // import Dodge from '../images/home/dodge 1.png';
+// import zariOnTime from '../images/home/iPhone 12 Pro (1).png';
+// import zariJumla from '../images/home/iPhone 12 Pro (2).png';
+// import zariGifts from '../images/home/iPhone 12 Pro (3).png';
+
 
 
 

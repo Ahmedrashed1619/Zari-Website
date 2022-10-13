@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import WOW from 'wowjs';
 import { useEffect } from 'react';
-import Questions from '../images/faq/Questions-bro 1.png';
 import { langContext } from '../context/store';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
+// import Questions from '../images/faq/Questions-bro 1.png';
 
 
 

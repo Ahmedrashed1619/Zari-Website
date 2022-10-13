@@ -110,7 +110,7 @@ export default function Project() {
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className="mb-1" htmlFor="FirstName">{isEng ? 'First Name' : 'الإســــم الأول'}</label>
-                                        <input onChange={getUserData} type="text" className="form-control p-2" name="FirstName" id="FirstName"/>
+                                        <input onChange={getUserData} type="text" className="form-control p-2" required name="FirstName" id="FirstName"/>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">
