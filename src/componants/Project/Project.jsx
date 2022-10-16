@@ -12,9 +12,7 @@ import onImg from '../images/Group 25.png'
 // import vid from '../images/projects/001 Welcome.mp4';
 
 
-export default function Project() {
-
-    let baseURL = 'https://zarimain.online/public/api/';
+export default function Project({baseURL}) {
 
 
     useEffect(() => {
@@ -87,57 +85,57 @@ export default function Project() {
                 </section>
 
                 {/* get our app section  */}
-                <section id="get" class="get" dir={isEng ? 'ltr' : 'rtl'}>
-                    <div class="container">
-                        <div class="main-title text-center pb-5 wow fadeInDownBig" data-wow-duration="1s">
-                            <h5 class="main-color mb-2">{isEng ? 'Do you have our app?' : 'الحصول على التطبيق؟'}</h5>
-                            <h2 class="fw-bold mb-3">{isEng ? 'Get Our Applications' : 'حمل التطبيق احجز موعدك وريح بالك!'}</h2>
-                            <p class="mx-auto mb-0">{isEng ? 'Our applications are available now on App store & Play store' : 'تطبيقاتنا متاحة الآن علي App store & Play store'}</p>
+                <section id="get" className="get" dir={isEng ? 'ltr' : 'rtl'}>
+                    <div className="container">
+                        <div className="main-title text-center pb-5 wow fadeInDownBig" data-wow-duration="1s">
+                            <h5 className="main-color mb-2">{isEng ? 'Do you have our app?' : 'الحصول على التطبيق؟'}</h5>
+                            <h2 className="fw-bold mb-3">{isEng ? 'Get Our Applications' : 'حمل التطبيق احجز موعدك وريح بالك!'}</h2>
+                            <p className="mx-auto mb-0">{isEng ? 'Our applications are available now on App store & Play store' : 'تطبيقاتنا متاحة الآن علي App store & Play store'}</p>
                         </div>
-                        <div class="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
-                            <div class="col-lg-4">
-                                <div class="client text-center d-flex flex-column">
-                                    <h4 class="mb-4 fw-bold">{isEng ? 'Zari on Time (Client App)' : 'Zari on Time (تطبيق العميل)'}</h4>
+                        <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
+                            <div className="col-lg-4">
+                                <div className="client text-center d-flex flex-column">
+                                    <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Client App)' : 'Zari on Time (تطبيق العميل)'}</h4>
                                     <a target="_blank" href="https://apps.apple.com/eg/app/zari-on-time/id1625508325"
-                                        class="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
-                                        <i class={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
-                                        <div class={`parag ${isEng ? 'text-start' : 'text-end'}`}>
-                                            <p class="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
-                                            <p class="mb-0 app">App Store</p>
+                                        className="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
+                                        <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
+                                        <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
+                                            <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
+                                            <p className="mb-0 app">App Store</p>
                                         </div>
                                     </a>
                                     <a target="_blank" href="https://play.google.com/store/apps/details?id=com.zari.zariontime"
-                                        class="btn mx-auto rounded-pill second-btn-p mb-4 d-flex justify-content-center align-items-center">
-                                        <i class={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
-                                        <div class={`parag ${isEng ? 'text-start' : 'text-end'}`}>
-                                            <p class="mb-0 get-on">{isEng ? 'Get On' : 'الذهاب لــ'}</p>
-                                            <p class="mb-0 app">Google Play</p>
+                                        className="btn mx-auto rounded-pill second-btn-p mb-4 d-flex justify-content-center align-items-center">
+                                        <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
+                                        <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
+                                            <p className="mb-0 get-on">{isEng ? 'Get On' : 'الذهاب لــ'}</p>
+                                            <p className="mb-0 app">Google Play</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="img-apps text-center">
+                            <div className="col-lg-4">
+                                <div className="img-apps text-center">
                                     <img src={onImg} alt="Group"/>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="manager text-center d-flex flex-column">
-                                    <h4 class="mb-4 fw-bold">{isEng ? 'Zari on Time (Manager App)' : 'Zari on Time (تطبيق المدير)'}</h4>
+                            <div className="col-lg-4">
+                                <div className="manager text-center d-flex flex-column">
+                                    <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Manager App)' : 'Zari on Time (تطبيق المدير)'}</h4>
                                     <a target="_blank" href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"
-                                        class="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
-                                        <i class={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
-                                        <div class={`parag ${isEng ? 'text-start' : 'text-end'}`}>
-                                            <p class="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
-                                            <p class="mb-0 app">App Store</p>
+                                        className="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
+                                        <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
+                                        <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
+                                            <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
+                                            <p className="mb-0 app">App Store</p>
                                         </div>
                                     </a>
                                     <a target="_blank" href="https://play.google.com/store/apps/details?id=com.zari.zari_manager"
-                                        class="btn mx-auto rounded-pill second-btn-p mb-4 d-flex justify-content-center align-items-center">
-                                        <i class={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
-                                        <div class={`parag ${isEng ? 'text-start' : 'text-end'}`}>
-                                            <p class="mb-0 get-on">{isEng ? 'Get On' : 'الذهاب لــ'}</p>
-                                            <p class="mb-0 app">Google Play</p>
+                                        className="btn mx-auto rounded-pill second-btn-p mb-4 d-flex justify-content-center align-items-center">
+                                        <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
+                                        <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
+                                            <p className="mb-0 get-on">{isEng ? 'Get On' : 'الذهاب لــ'}</p>
+                                            <p className="mb-0 app">Google Play</p>
                                         </div>
                                     </a>
                                 </div>

@@ -9,9 +9,7 @@ import axios from 'axios';
 // import productImg from '../images/products/Group 170.png';
 
 
-export default function Product() {
-
-    let baseURL = 'https://zarimain.online/public/api/';
+export default function Product({baseURL}) {
 
 
     useEffect(() => {

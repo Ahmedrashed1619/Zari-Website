@@ -9,9 +9,7 @@ import axios from 'axios';
 // import collaboration from '../images/services/Live collaboration-pana 1.png';
 
 
-export default function Service() {
-
-    let baseURL = 'https://zarimain.online/public/api/';
+export default function Service({baseURL}) {
 
 
     useEffect(() => {

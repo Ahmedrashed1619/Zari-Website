@@ -282,11 +282,11 @@ function App() {
             </div>}>
           </Route>
 
-          <Route path='services/:id' element={<Service />} />
+          <Route path='services/:id' element={<Service baseURL={baseURL}/>} />
 
-          <Route path='products/:id' element={<Product />} />
+          <Route path='products/:id' element={<Product baseURL={baseURL}/>} />
 
-          <Route path='projects/:id' element={<Project />}></Route>
+          <Route path='projects/:id' element={<Project baseURL={baseURL}/>} />
 
           <Route path='share' element={<Contact />}></Route>
 
