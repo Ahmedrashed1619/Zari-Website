@@ -178,7 +178,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link previous" to="previous">{isEng ? 'Works' : 'الأعمال السابقــة'}</NavLink>
+                                <NavLink className="nav-link previous" to="previous">{isEng ? 'Works' : 'الأعمــال'}</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="share">{isEng ? 'Share your project' : 'شارك مشروعــك'}</NavLink>

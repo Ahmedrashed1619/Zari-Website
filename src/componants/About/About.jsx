@@ -40,8 +40,6 @@ export default function About({fetchAbout}) {
             $('.about').attr('dir', 'rtl');
             $('.about .caption-about h2').css('animationName' , 'headerArabic');
 
-            $('.mission-goals .d-flex').removeClass('me-3');
-            $('.mission-goals .d-flex').addClass('ms-3');
             $('.mission-goals .mission').css({'borderLeft' : 'none' , 'borderRight' : '3px solid var(--mainColor)' , 'animationName' : 'missionArabic'});
             $('.mission-goals .mission').removeClass('ps-2');
             $('.mission-goals .mission').addClass('pe-2');
@@ -49,9 +47,8 @@ export default function About({fetchAbout}) {
             $('.mission-goals .goals').css({'borderLeft' : 'none' , 'borderRight' : '3px solid var(--mainColor)' , 'animationName' : 'goalsArabic'});
             $('.mission-goals .goals').removeClass('ps-2');
             $('.mission-goals .goals').addClass('pe-2');
-            $('.mission-goals p').css({'borderLeft' : 'none' , 'borderRight' : '3px solid var(--mainColor)' , 'animationName' : 'paragraphArabic'});
-            $('.mission-goals p').removeClass('ps-2');
-            $('.mission-goals p').addClass('pe-2');
+            $('.mission-goals p.p1').css({'borderLeft' : 'none' , 'borderRight' : '3px solid var(--mainColor)' , 'animationName' : 'paragraphArabic1'});
+            $('.mission-goals p.p2').css({'borderLeft' : 'none' , 'borderRight' : '3px solid var(--mainColor)' , 'animationName' : 'paragraphArabic2'});
 
             // $('.our-story').attr('dir', 'rtl');
 
@@ -67,8 +64,6 @@ export default function About({fetchAbout}) {
             $('.about').attr('dir', 'ltr');
             $('.about .caption-about h2').css('animationName' , 'header');
 
-            $('.mission-goals .d-flex').removeClass('ms-3');
-            $('.mission-goals .d-flex').addClass('me-3');
             $('.mission-goals .mission').css({'borderLeft' : '3px solid var(--mainColor)' , 'borderRight' : 'none' , 'animationName' : 'mission'});
             $('.mission-goals .mission').removeClass('pe-2');
             $('.mission-goals .mission').addClass('ps-2');
@@ -76,9 +71,8 @@ export default function About({fetchAbout}) {
             $('.mission-goals .goals').css({'borderLeft' : '3px solid var(--mainColor)' , 'borderRight' : 'none' , 'animationName' : 'goals'});
             $('.mission-goals .goals').removeClass('pe-2');
             $('.mission-goals .goals').addClass('ps-2');
-            $('.mission-goals p').css({'borderLeft' : '3px solid var(--mainColor)' , 'borderRight' : 'none' , 'animationName' : 'paragraph'});
-            $('.mission-goals p').removeClass('pe-2');
-            $('.mission-goals p').addClass('ps-2');
+            $('.mission-goals p.p1').css({'borderLeft' : '3px solid var(--mainColor)' , 'borderRight' : 'none' , 'animationName' : 'paragraph1'});
+            $('.mission-goals p.p2').css({'borderLeft' : '3px solid var(--mainColor)' , 'borderRight' : 'none' , 'animationName' : 'paragraph2'});
 
             // $('.our-story').attr('dir', 'ltr');
 
@@ -138,13 +132,20 @@ export default function About({fetchAbout}) {
                                 <h2 className="fw-bold mb-2 fs-1">{isEng ? fetchAbout.top.header : fetchAbout.top.headerAr}</h2>
                                 <p className="mb-2 py-1 parag-1">{isEng ? fetchAbout.top.text : fetchAbout.top.textAr}</p>
                                 <p className="mb-4 py-1 parag-2">{isEng ? fetchAbout.top.text2 : fetchAbout.top.text2Ar}</p>
-                                <div className="mission-goals d-flex justify-content-center align-items-center">
-                                    <div className={`d-flex flex-column ${isEng ? 'w-75' : 'w-25'} me-3`}>
-                                        <h6 className="ps-2 py-2 mission mb-3">{isEng ? fetchAbout.mission.header : fetchAbout.mission.headerAr}</h6>
-                                        <h6 className="m-0 ps-2 py-2 goals">{isEng ? fetchAbout.mission.title : fetchAbout.mission.titleAr}</h6>
+                                <div className="mission-goals d-flex align-items-center mb-4">
+                                    <div className={`${isEng ? 'me-3' : 'ms-3'}`}>
+                                        <h6 className={`m-0 py-2 mission ${isEng ? 'w-sp110' : 'w-sp75'}`}>{isEng ? fetchAbout.mission.header : fetchAbout.mission.headerAr}</h6>
                                     </div>
                                     <div>
-                                        <p className="m-0 ps-2 py-2">{isEng ? fetchAbout.mission.text : fetchAbout.mission.textAr}</p>
+                                        <p className={`m-0 py-2 p2 ${isEng ? 'ps-2' : 'pe-2'}`}>{isEng ? 'Work on the establishment of various companies to invest in creative technical minds to rise together from local to global.' : 'صناعة الشراكات المختلفة لنستثمر في العقول الإبداعية التقنية لنرتقي سوياً من المحلية الى العالمية.'}</p>
+                                    </div>
+                                </div>
+                                <div className="mission-goals d-flex align-items-center">
+                                    <div className={`${isEng ? 'me-3' : 'ms-3'}`}>
+                                        <h6 className={`m-0 py-2 goals ${isEng ? 'w-sp110' : 'w-sp75'}`}>{isEng ? fetchAbout.mission.title : fetchAbout.mission.titleAr}</h6>
+                                    </div>
+                                    <div>
+                                        <p className={`m-0 py-2 p1 ${isEng ? 'ps-2' : 'pe-2'}`}>{isEng ? 'Expand the circle of companies and multiple unions by adopting innovative ideas and harnessing our technical, administrative and marketing capabilities to advance to a sustainable economic world.' : 'توسع دائرة الشراكات والاتحادات المتعددة بتبني الأفكار المبتكرة وتسخير إمكانياتنا التقنية والإدارية والتسويقية للنهوض الى عالم اقتصادي مستدام.'}</p>
                                     </div>
                                 </div>
                             </div>

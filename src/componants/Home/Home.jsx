@@ -469,7 +469,7 @@ export default function Home({ fetchHome }) {
               </OwlCarousel>
             </div>
             <div className="buttons text-center mt-0 wow fadeInUpBig">
-              <Link to="../Services" className="btn second-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'All Services' : 'كـل الخدمـــات'}</Link>
+              <Link to="../Services" className="btn second-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'All Services' : 'المزيـــد'}</Link>
             </div>
           </div>
         </div>
@@ -584,7 +584,7 @@ export default function Home({ fetchHome }) {
               </div>
             ))}
             <div className="buttons text-center mt-5">
-              <Link to="../Previous" className="btn second-btn py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'All Previous Work' : 'كـل الأعمــــال السابقــة'}</Link>
+              <Link to="../Previous" className="btn second-btn py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'All Previous Work' : 'المزيــد من الأعمــــال'}</Link>
             </div>
           </div>
         </div>

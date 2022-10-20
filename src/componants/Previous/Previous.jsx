@@ -115,7 +115,7 @@ export default function Previous({fetchWorks}) {
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
-                            <h2 className="fs-1 text-white fw-bold">{isEng ? 'Our Previous Work' : 'أعمالنـــا السابقـة'}</h2>
+                            <h2 className="fs-1 text-white fw-bold">{isEng ? 'Our Works' : 'أعمالنـــا'}</h2>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ export default function Previous({fetchWorks}) {
                         <div className="row gx-4 gy-5 d-flex justify-content-center align-items-center">
                             <div className="col-12">
                                 <div className="main-title text-center pt-3 w-75 mx-auto wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <h2 className="fw-bold mb-2 fs-1">{isEng ? 'Our Previous Work' : 'أعمالنـــا السابقـة'}</h2>
+                                    <h2 className="fw-bold mb-2 fs-1">{isEng ? 'Our Works' : 'أعمالنـــا'}</h2>
                                 </div>
                             </div>
                             {fetchWorks.works.map((work , i) => (

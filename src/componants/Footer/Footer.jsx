@@ -64,7 +64,7 @@ export default function Footer() {
                             <div className="logo-footer wow fadeInRight" data-wow-duration="1.5s">
                                 <img src={imgFooter} className="w-50" alt="zari logo"/>
                                 <p>{isEng ? `Zari is a Saudi-Egyptian company among a group of companies operating in more than one field
-                                    in Saudi Arabia and the Middle East.` : 'زاري هي شركة سعودية مصرية من بين مجموعة شركات تعمل في أكثر من مجال في المملكة العربية السعودية والشرق الأوسط.'}</p>
+                                    in Saudi Arabia and the Middle East.` : 'حلول زاري لتقنية المعلومات شركة سعودية تعمل علي تطوير الأعمال وأن نكون شركاء نجاح مع قطاعات الأعمال المختلفة لتطوير أعمالهم من خلال تقديم حلول تقنية ةتسويقية. '}</p>
                                 <h5 className="mb-4">{isEng ? 'Follow us' : 'تابعنــــا'}</h5>
                                 <div className="icons-footer d-flex align-items-center mb-3">
                                     <a target="_blank" rel='noreferrer' href="https://www.facebook.com/ZARISolutionksa"><i
@@ -139,23 +139,23 @@ export default function Footer() {
                                 <h5 className="mb-5 contact">{isEng ? 'Contact us' : 'تواصــل معنـــا'}</h5>
                                 <div className="d-flex justify-content-start align-items-center mb-2">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                    <p className="lh-sm ksa">{isEng ? '7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA' : '7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
+                                    <a href="https://goo.gl/maps/6wBGzU2dcBN5yAFA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm ksa">{isEng ? '7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA' : '7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p></a>
                                 </div>
                                 <div className="d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                    <p className="lh-sm egy">{isEng ? '9 Street Saeed Zakaria - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
+                                    <a href="https://goo.gl/maps/AohCr3w5nghEzBqA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? '9 Street Saeed Zakaria - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
                                 </div>
                                 <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
-                                    <a rel='noreferrer' target="_blank" href="tel:+966920024403"> +966 92 002 4403</a>
+                                    <a rel='noreferrer' target="_blank" href="tel:+966920024403">{isEng ? ' +966 92 002 4403' : '4403 002 92 966+ '}</a>
                                 </div>
                                 <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
-                                    <a rel='noreferrer' target="_blank" href="tel:+966566770235"> +966 56 677 0235</a>
+                                    <a rel='noreferrer' target="_blank" href="tel:+966566770235">{isEng ? ' +966 56 677 0235' : '0235 677 56 966+ '}</a>
                                 </div>
                                 <div className="d-flex justify-content-start align-items-center">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>
-                                    <a rel='noreferrer' target="_blank" href="https://info@zarisolution.com/"> info@zarisolution.com</a>
+                                    <a rel='noreferrer' target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm#search/info%40zarisolution.com%2F?compose=new">info@zarisolution.com</a>
                                 </div>
                             </div>
                         </div>

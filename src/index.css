@@ -9,7 +9,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;  
-  /* overflow: hidden; */
 }
 
 #ready {
@@ -125,7 +124,6 @@ video {
   position: relative;
   font-weight: 500;
   font-size: 16px;
-  /* font-size: 15px; */
   transition: all 0.25s;
   text-align: center;
 }
@@ -298,9 +296,6 @@ video {
 
 /* header-home */
 
-/* .home{
-    margin-top: 50px;
-} */
 .total-header {
   padding-top: 7rem;
 }
@@ -1435,12 +1430,30 @@ video {
   animation-iteration-count: infinite;
 }
 
-.mission-goals p {
+.w-sp110{
+  width: 110px !important;
+}
+
+.w-sp75{
+  width: 75px !important;
+}
+
+.mission-goals p.p1 {
   transition: all 0.5s;
   border-left: 2px solid var(--secondColor);
   color: #000;
   font-weight: 500;
-  animation-name: paragraph;
+  animation-name: paragraph1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.mission-goals p.p2 {
+  transition: all 0.5s;
+  border-left: 2px solid var(--secondColor);
+  color: #000;
+  font-weight: 500;
+  animation-name: paragraph2;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
@@ -1533,7 +1546,7 @@ video {
   }
 }
 
-@keyframes paragraph {
+@keyframes paragraph1 {
   0% {
       border-left-color: var(--secondColor);
       color: #000
@@ -1555,7 +1568,7 @@ video {
   }
 }
 
-@keyframes paragraphArabic {
+@keyframes paragraphArabic1 {
   0% {
       border-right-color: var(--secondColor);
       color: #000
@@ -1574,6 +1587,50 @@ video {
   100% {
       border-right-color: var(--mainColor);
       color: var(--mainColor)
+  }
+}
+
+@keyframes paragraph2 {
+  0% {
+      border-left-color: var(--mainColor);
+      color: var(--mainColor)
+  }
+
+  50% {
+      border-left-color: var(--mainColor);
+      color: var(--mainColor)
+  }
+
+  51% {
+      border-left-color: var(--secondColor);
+      color: #000
+  }
+
+  100% {
+      border-left-color: var(--secondColor);
+      color: #000
+  }
+}
+
+@keyframes paragraphArabic2 {
+  0% {
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
+  }
+
+  50% {
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
+  }
+
+  51% {
+    border-right-color: var(--secondColor);
+    color: #000
+  }
+
+  100% {
+      border-right-color: var(--secondColor);
+      color: #000
   }
 }
 
