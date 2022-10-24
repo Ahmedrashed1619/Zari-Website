@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Zari-Website/static/css/main.ca84d676.css",
-    "main.js": "/Zari-Website/static/js/main.935cf102.js",
+    "main.css": "/Zari-Website/static/css/main.c340370f.css",
+    "main.js": "/Zari-Website/static/js/main.970dd32e.js",
     "static/js/787.e0e709d5.chunk.js": "/Zari-Website/static/js/787.e0e709d5.chunk.js",
     "static/media/Rectangle 194.png": "/Zari-Website/static/media/Rectangle 194.f47cc5fc515a3167cc2c.png",
     "static/media/left.png": "/Zari-Website/static/media/left.2564e9881ea21acf5fae.png",
@@ -23,12 +23,12 @@
     "static/media/fa-v4compatibility.ttf": "/Zari-Website/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/Zari-Website/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Zari-Website/index.html",
-    "main.ca84d676.css.map": "/Zari-Website/static/css/main.ca84d676.css.map",
-    "main.935cf102.js.map": "/Zari-Website/static/js/main.935cf102.js.map",
+    "main.c340370f.css.map": "/Zari-Website/static/css/main.c340370f.css.map",
+    "main.970dd32e.js.map": "/Zari-Website/static/js/main.970dd32e.js.map",
     "787.e0e709d5.chunk.js.map": "/Zari-Website/static/js/787.e0e709d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca84d676.css",
-    "static/js/main.935cf102.js"
+    "static/css/main.c340370f.css",
+    "static/js/main.970dd32e.js"
   ]
 }
