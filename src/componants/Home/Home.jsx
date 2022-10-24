@@ -533,7 +533,7 @@ export default function Home({ fetchHome }) {
       </section>
 
       {/* clients-home */}
-      <section className="home-clients py-4">
+      {/* <section className="home-clients py-4">
         <div className="container">
           <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
             <div className="col-12">
@@ -564,7 +564,7 @@ export default function Home({ fetchHome }) {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* works-home */}
       <section className="home-previous py-5">

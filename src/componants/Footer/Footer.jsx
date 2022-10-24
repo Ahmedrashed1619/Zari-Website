@@ -141,9 +141,13 @@ export default function Footer() {
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                     <a href="https://goo.gl/maps/6wBGzU2dcBN5yAFA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm ksa">{isEng ? '7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA' : '7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p></a>
                                 </div>
+                                <div className="d-flex justify-content-start align-items-center mb-2">
+                                    <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
+                                    <a href="https://www.google.com/maps/place/24%C2%B049'57.9%22N+46%C2%B040'52.1%22E/@24.8327465,46.6789598,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xbb9f0e7b1014cb34!8m2!3d24.8327465!4d46.6811485?hl=en" target="_blank" rel="noopener noreferrer"><p className="lh-sm ksa">{isEng ? 'Anas bin Malik Road - intersection of Othman bin Affan Road - AL-Riyadh - KSA' : 'طريق انس بن مالك - تقاطع طريق عثمان بن عفان - الرياض - المملكة العربية السعودية.'}</p></a>
+                                </div>
                                 <div className="d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                    <a href="https://goo.gl/maps/AohCr3w5nghEzBqA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? '9 Street Saeed Zakaria - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
+                                    <a href="https://goo.gl/maps/AohCr3w5nghEzBqA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? '9 Street Saeed Zakaria - 8th District - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - المنطقة الثامنة - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
                                 </div>
                                 <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
@@ -153,9 +157,13 @@ export default function Footer() {
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                     <a rel='noreferrer' target="_blank" href="tel:+966566770235">{isEng ? ' +966 56 677 0235' : '0235 677 56 966+ '}</a>
                                 </div>
+                                <div className="phone d-flex justify-content-start align-items-center mb-3">
+                                    <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
+                                    <a rel='noreferrer' target="_blank" href="tel:+201151300867">{isEng ? ' 01151300867' : '01151300867 '}</a>
+                                </div>
                                 <div className="d-flex justify-content-start align-items-center">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>
-                                    <a rel='noreferrer' target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm#search/info%40zarisolution.com%2F?compose=new">info@zarisolution.com</a>
+                                    <a rel='noreferrer' target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=VpCqJKjfgRtcdLcBmXhbSjczqWqGtTzCcxbpGJKzzKgljwnZwSRflMqjZxxLrwCghhGNMlq">info@zarisolution.com</a>
                                 </div>
                             </div>
                         </div>

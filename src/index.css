@@ -747,7 +747,7 @@ video {
   }
 
   .caption-details p {
-      font-size: 12px;
+      font-size: 12px !important;
       margin-bottom: 0.5rem !important;
   }
 }

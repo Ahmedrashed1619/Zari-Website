@@ -7,7 +7,8 @@ import { langContext } from '../context/store';
 import $ from 'jquery';
 
 
-export default function Contact() {
+export default function Contact({baseURL}) {
+
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
@@ -58,7 +59,7 @@ export default function Contact() {
         setLoadind(true);
         let {data} = await axios({
             method: 'post',
-            url: 'http://66.29.139.205/zarimain/public/api/contact',
+            url: `${baseURL}contact`,
             data: user,
             headers: { "Content-Type": "multipart/form-data" },
         });
@@ -134,9 +135,13 @@ export default function Contact() {
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? '7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA' : '7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
                                     </div>
+                                    <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
+                                        <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
+                                        <p className="lh-sm mb-0">{isEng ? 'Anas bin Malik Road - intersection of Othman bin Affan Road - AL-Riyadh - KSA' : 'طريق انس بن مالك - تقاطع طريق عثمان بن عفان - الرياض - المملكة العربية السعودية.'}</p>
+                                    </div>
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? '9 Street Saeed Zakaria - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
+                                        <p className="lh-sm mb-0">{isEng ? '9 Street Saeed Zakaria - 8th District - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - المنطقة الثامنة - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
                                     </div>
                                 </div>
                                 <div className="p-4 form text-center wow fadeInUp" data-wow-duration="1.5s">
@@ -147,7 +152,7 @@ export default function Contact() {
                                     </div>
                                     <div className={`phone d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? 'Egypt Mobile: (+20) 103456848' : 'رقـم الهـاتــف المصري: 103456848 (20+) '}</p>
+                                        <p className="lh-sm mb-0">{isEng ? 'Egypt Mobile: (+20) 1151300867' : 'رقـم الهـاتــف المصري: 1151300867 (20+) '}</p>
                                     </div>
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>

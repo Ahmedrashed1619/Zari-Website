@@ -288,11 +288,11 @@ function App() {
 
           <Route path='projects/:id' element={<Project baseURL={baseURL}/>} />
 
-          <Route path='share' element={<Contact />}></Route>
+          <Route path='share' element={<Contact baseURL={baseURL}/>}></Route>
 
-          <Route path='join' element={<Join />}></Route>
+          <Route path='join' element={<Join baseURL={baseURL}/>}></Route>
 
-          <Route path='contact' element={<Contact />}></Route>
+          <Route path='contact' element={<Contact baseURL={baseURL}/>}></Route>
 
           <Route path='faq' element={Object.keys(fetchFaqs).length > 0 ? <Faq fetchFaqs={fetchFaqs}/> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>

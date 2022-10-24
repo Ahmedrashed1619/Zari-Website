@@ -196,7 +196,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                 changeLink();
                             }}>
                                 <i className="fa-solid fa-globe fs-6"></i>
-                                <button className='py-1'>{isEng ? 'English' : 'العـربـيــة'}</button>
+                                <button className='py-1'>{isEng ? 'العـربـيــة' : 'English'}</button>
                             </div>
                         </div>
                     </div>

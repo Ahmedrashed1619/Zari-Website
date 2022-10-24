@@ -7,7 +7,7 @@ import { langContext } from '../context/store';
 import $ from 'jquery';
 
 
-export default function Project() {
+export default function Project({baseURL}) {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
@@ -64,7 +64,7 @@ export default function Project() {
         setLoadind(true);
         let {data} = await axios({
             method: 'post',
-            url: 'http://66.29.139.205/zarimain/public/api/join',
+            url: `${baseURL}join`,
             data: user,
             headers: { "Content-Type": "multipart/form-data" },
         });
