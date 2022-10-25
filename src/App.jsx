@@ -17,7 +17,7 @@ import Product from './componants/Product/Product';
 import Project from './componants/Project/Project';
 import Service from './componants/Service/Service';
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes , Route } from 'react-router-dom';
 import $ from 'jquery';
 import { useState } from 'react';
 import axios from 'axios';
@@ -241,7 +241,7 @@ function App() {
 
   return (
 
-    <>
+    <> 
       <Navbar fetchNav={fetchNav} fetchProjects={fetchProjects} />
 
       <Chat />
@@ -249,38 +249,31 @@ function App() {
 
           <Route path='/' element={Object.keys(fetchHome).length > 0 ? <Home fetchHome={fetchHome} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='home' element={Object.keys(fetchHome).length > 0 ? <Home fetchHome={fetchHome} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='about' element={Object.keys(fetchAbout).length > 0 ? <About fetchAbout={fetchAbout} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='services' element={Object.keys(fetchServices).length > 0 ? <Services fetchServices={fetchServices} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='products' element={Object.keys(fetchProducts).length > 0 ? <Products fetchProducts={fetchProducts} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='projects' element={Object.keys(fetchProjects).length > 0 ? <Projects fetchProjects={fetchProjects} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='previous' element={Object.keys(fetchWorks).length > 0 ? <Previous fetchWorks={fetchWorks} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='services/:id' element={<Service baseURL={baseURL}/>} />
 
@@ -288,28 +281,25 @@ function App() {
 
           <Route path='projects/:id' element={<Project baseURL={baseURL}/>} />
 
-          <Route path='share' element={<Contact baseURL={baseURL}/>}></Route>
+          <Route path='share' element={<Contact baseURL={baseURL}/>} />
 
-          <Route path='join' element={<Join baseURL={baseURL}/>}></Route>
+          <Route path='join' element={<Join baseURL={baseURL}/>} />
 
-          <Route path='contact' element={<Contact baseURL={baseURL}/>}></Route>
+          <Route path='contact' element={<Contact baseURL={baseURL}/>} />
 
           <Route path='faq' element={Object.keys(fetchFaqs).length > 0 ? <Faq fetchFaqs={fetchFaqs}/> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='privacy' element={Object.keys(fetchPolicy).length > 0 ? <Privacy fetchPolicy={fetchPolicy}/> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
           <Route path='terms' element={Object.keys(fetchTerms).length > 0 ? <Terms fetchTerms={fetchTerms}/> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
-            </div>}>
-          </Route>
+            </div>} />
 
-          <Route path='*' element={<Notfound />}></Route>
+          <Route path='*' element={<Notfound />} />
 
       </Routes>
       <Footer />

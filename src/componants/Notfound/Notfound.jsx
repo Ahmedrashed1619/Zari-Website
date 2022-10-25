@@ -10,7 +10,7 @@ export default function Notfound() {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
-
+        $('.nav-item a').removeClass('active');
     }, []);
 
     useEffect(() => {

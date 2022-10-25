@@ -133,15 +133,15 @@ export default function Contact({baseURL}) {
                                     <h4 className="main-color fw-bold mb-4">{isEng ? 'Our Addresses' : 'عناوينـــا'}</h4>
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? '7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA' : '7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
+                                        <p className="lh-sm mb-0">{isEng ? 'Riyadh Office: 8491 Othman Bin Affaan Road Al Narjas - Riyadh - KSA.' : 'مكتب الرياض: 8491 طريق انس بن مالك تقاطع طريق عثمان بن عفان النرجس - الرياض - المملكة العربية السعودية.'}</p>
                                     </div>
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? 'Anas bin Malik Road - intersection of Othman bin Affan Road - AL-Riyadh - KSA' : 'طريق انس بن مالك - تقاطع طريق عثمان بن عفان - الرياض - المملكة العربية السعودية.'}</p>
+                                        <p className="lh-sm mb-0">{isEng ? 'AL-Madina Office: 7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA.' : 'مكتب المدينة المنورة: 7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
                                     </div>
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? '9 Street Saeed Zakaria - 8th District - Nasr City - Cairo - Egypt' : '9 شارع سعيد زكريا - المنطقة الثامنة - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
+                                        <p className="lh-sm mb-0">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
                                     </div>
                                 </div>
                                 <div className="p-4 form text-center wow fadeInUp" data-wow-duration="1.5s">
