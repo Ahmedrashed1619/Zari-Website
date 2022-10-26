@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
 import vector from '../images/home/Vector 5 (1).png';
+import imgAbout from '../images/home/Group 174.png';
 // import { Link } from 'react-router-dom';
 // import AlfaRomeo2 from '../images/home/Alfa Romeo 2.png';
 // import Texmar2 from '../images/home/Texmar 2.png';
@@ -124,7 +125,7 @@ export default function About({fetchAbout}) {
             </header>
 
             {/* about */}
-            <section className="about py-5">
+            <section className="about">
                 <div className="container">
                     <div className="row gx-0 gy-4 d-flex justify-content-center align-items-center py-5">
                         <div className="col-lg-6">
@@ -151,12 +152,20 @@ export default function About({fetchAbout}) {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="imgs-about d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="1.5s">
+                            {/* <div className="imgs-about d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="1.5s">
                                 <div className="gb-img d-flex flex-column align-items-end">
                                     <img src={fetchAbout.top.image2} className="w-60 top-img" alt="Ellipse"/>
                                     <img src={fetchAbout.top.image3} className="w-60" alt="Ellipse"/>
                                 </div>
                                 <img src={fetchAbout.top.image1} className="w-50 large-scale" alt="Ellipse"/>
+                            </div> */}
+                            <div className="imgs-about d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="1.5s">
+                                <img src={fetchAbout.top.image ? fetchAbout.top.image : imgAbout} className="w-100" alt="about-zari" />
+                                {/* <img src={fetchHome.about.image1} className="w-50 large-scale" alt="Ellipse" />
+                                <div className="gb-img d-flex flex-column">
+                                <img src={fetchHome.about.image2} className="w-60 top-img" alt="Ellipse" />
+                                <img src={fetchHome.about.image3} className="w-60" alt="Ellipse" />
+                                </div> */}
                             </div>
                         </div>
                     </div>

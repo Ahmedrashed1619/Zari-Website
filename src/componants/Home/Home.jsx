@@ -17,7 +17,8 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import { langContext } from '../context/store';
-// import imgHeader from '../images/home/co-workers.png';
+import imgHeader from '../images/home/Group 173.png';
+import imgAbout from '../images/home/Group 174.png';
 // import imgAboutLarge from '../images/home/Ellipse 31.png';
 // import imgAboutSmall1 from '../images/home/Ellipse 32.png';
 // import imgAboutSmall2 from '../images/home/Ellipse 33.png';
@@ -52,7 +53,7 @@ export default function Home({ fetchHome }) {
 
   useEffect(() => {
     $('html , body').animate({ scrollTop: 0 }, 200);
-}, []);
+  }, []);
 
 
   const clients = {
@@ -405,7 +406,7 @@ export default function Home({ fetchHome }) {
               </div>
               <div className="col-lg-5">
                 <div className="img-header wow fadeInRight" data-wow-duration="1.5s">
-                  <img src={fetchHome.top.image} className="w-100"
+                  <img src={fetchHome.top.image ? fetchHome.top.image : imgHeader} className="w-100"
                     alt="co-workers" />
                 </div>
               </div>
@@ -415,16 +416,17 @@ export default function Home({ fetchHome }) {
       </header>
 
       {/* about-home */}
-      <section className="home-about py-5">
+      <section className="home-about">
         <div className="container">
           <div className="row gx-0 gy-4 d-flex justify-content-center align-items-center py-5">
             <div className="col-lg-6">
               <div className="imgs-about d-flex justify-content-center align-items-center wow fadeInLeft" data-wow-duration="1.5s">
-                <img src={fetchHome.about.image1} className="w-50 large-scale" alt="Ellipse" />
+                <img src={fetchHome.about.image ? fetchHome.about.image : imgAbout} className="w-100" alt="about-zari" />
+                {/* <img src={fetchHome.about.image1} className="w-50 large-scale" alt="Ellipse" />
                 <div className="gb-img d-flex flex-column">
                   <img src={fetchHome.about.image2} className="w-60 top-img" alt="Ellipse" />
                   <img src={fetchHome.about.image3} className="w-60" alt="Ellipse" />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-6">

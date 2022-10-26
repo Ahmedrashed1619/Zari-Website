@@ -147,7 +147,7 @@ export default function Footer() {
                                 </div>
                                 <div className="d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
-                                    <a href="https://goo.gl/maps/AohCr3w5nghEzBqA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
+                                    <a href="https://www.google.com/maps/place/30%C2%B002'14.9%22N+31%C2%B020'40.5%22E/@30.037473,31.3467786,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.037473!4d31.3445899" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
                                 </div>
                                 <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>

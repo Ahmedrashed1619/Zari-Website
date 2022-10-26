@@ -14,7 +14,6 @@ export default function Service({baseURL}) {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
-
     }, []);
 
     useEffect(() => {
@@ -85,6 +84,9 @@ export default function Service({baseURL}) {
                             <img src={fetchServiceData.service.image} className="w-75 mx-auto" alt="website design"/>
                         </div>
                     </div>
+                </div>
+                <div className="buttons text-center mt-4 wow fadeInUpBig">
+                    <Link to="../Contact" className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                 </div>
             </div>
         </section>

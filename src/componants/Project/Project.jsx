@@ -17,7 +17,6 @@ export default function Project({baseURL}) {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
-
     }, []);
 
     useEffect(() => {

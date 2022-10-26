@@ -38,6 +38,15 @@ export default function Project({baseURL}) {
 
     const [loadind, setLoadind] = useState(false);
 
+    function alertCvEnter(){
+        $('#alertCv').addClass('d-block');
+        $('#alertCv').removeClass('d-none');
+    }
+
+    function alertCvRemove(){
+        $('#alertCv').addClass('d-none');
+        $('#alertCv').removeClass('d-block');
+    }
 
     function getUserData(e) {
         let myUser = {...user};
@@ -160,7 +169,8 @@ export default function Project({baseURL}) {
 
                                     <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1.5s">
                                         <label className=" mt-2 mb-1" htmlFor="CV">{isEng ? 'CV' : 'السيـــرة الذاتيــــة'}</label>
-                                        <input onChange={getUserData} type="file" className="form-control p-2 mb-2" required multiple name="CV" id="CV"/>
+                                        <input onChange={getUserData} onMouseEnter={alertCvEnter} onMouseLeave={alertCvRemove} type="file" className="form-control p-2 mb-2" required multiple name="CV" id="CV"/>
+                                        <p id='alertCv' className="alert alert-danger fs-6 py-2 mb-0 mb-2 text-center mx-auto d-none">{isEng ? 'This field only supports data supported in pdf format' : 'هذا الحقل لا يدعم إلا البيانات المدعمة بصيغة pdf'}</p>
                                     </div>
 
                                     <div className="col-lg-6 wow fadeInRight" data-wow-duration="1.5s">

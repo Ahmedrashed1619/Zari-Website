@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 // import productImg from '../images/products/Group 170.png';
 
@@ -14,7 +14,6 @@ export default function Product({baseURL}) {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
-
     }, []);
 
     useEffect(() => {
@@ -102,6 +101,9 @@ export default function Product({baseURL}) {
                                 <img src={fetchProductData.product.image} className="w-75 mx-auto" alt="e-commerce"/>
                             </div>
                         </div>
+                    </div>
+                    <div className="buttons text-center mt-3 wow fadeInUpBig">
+                        <Link to="../Contact" className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                     </div>
                 </div>
             </section>
