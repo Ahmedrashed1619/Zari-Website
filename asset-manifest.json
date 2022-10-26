@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Zari-Website/static/css/main.c340370f.css",
-    "main.js": "/Zari-Website/static/js/main.79346909.js",
+    "main.css": "/Zari-Website/static/css/main.5b997b64.css",
+    "main.js": "/Zari-Website/static/js/main.ef968bf6.js",
     "static/js/787.e0e709d5.chunk.js": "/Zari-Website/static/js/787.e0e709d5.chunk.js",
     "static/media/Rectangle 194.png": "/Zari-Website/static/media/Rectangle 194.f47cc5fc515a3167cc2c.png",
     "static/media/left.png": "/Zari-Website/static/media/left.2564e9881ea21acf5fae.png",
@@ -10,6 +10,8 @@
     "static/media/fa-solid-900.woff2": "/Zari-Website/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
     "static/media/Group 25.png": "/Zari-Website/static/media/Group 25.7505319445400256ec31.png",
     "static/media/fa-brands-400.woff2": "/Zari-Website/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/Group 174.png": "/Zari-Website/static/media/Group 174.2509359e38b5f81d21e7.png",
+    "static/media/Group 173.png": "/Zari-Website/static/media/Group 173.89f1d16fa2dffe1697d0.png",
     "static/media/website design.png": "/Zari-Website/static/media/website design.847662db0316963744c2.png",
     "static/media/mobile app.png": "/Zari-Website/static/media/mobile app.55e4a3902b05e9bec79f.png",
     "static/media/404 Error Page not Found.png": "/Zari-Website/static/media/404 Error Page not Found.e4387f975d857989b085.png",
@@ -23,12 +25,12 @@
     "static/media/fa-v4compatibility.ttf": "/Zari-Website/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/Zari-Website/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Zari-Website/index.html",
-    "main.c340370f.css.map": "/Zari-Website/static/css/main.c340370f.css.map",
-    "main.79346909.js.map": "/Zari-Website/static/js/main.79346909.js.map",
+    "main.5b997b64.css.map": "/Zari-Website/static/css/main.5b997b64.css.map",
+    "main.ef968bf6.js.map": "/Zari-Website/static/js/main.ef968bf6.js.map",
     "787.e0e709d5.chunk.js.map": "/Zari-Website/static/js/787.e0e709d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c340370f.css",
-    "static/js/main.79346909.js"
+    "static/css/main.5b997b64.css",
+    "static/js/main.ef968bf6.js"
   ]
 }
