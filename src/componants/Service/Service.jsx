@@ -9,7 +9,7 @@ import axios from 'axios';
 // import collaboration from '../images/services/Live collaboration-pana 1.png';
 
 
-export default function Service({baseURL}) {
+export default function Service({baseURL, showNameEn, showNameAr, showTypeEn, showTypeAr}) {
 
 
     useEffect(() => {
@@ -86,7 +86,12 @@ export default function Service({baseURL}) {
                     </div>
                 </div>
                 <div className="buttons text-center mt-4 wow fadeInUpBig">
-                    <Link to="../Contact" className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
+                    <Link to="../order" onClick={() => {
+                        showNameEn(fetchServiceData.service.header)
+                        showNameAr(fetchServiceData.service.headerAr)
+                        showTypeEn('SERVICE')
+                        showTypeAr('خدمـــة')
+                    }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                 </div>
             </div>
         </section>

@@ -21,6 +21,7 @@ import { Routes , Route } from 'react-router-dom';
 import $ from 'jquery';
 import { useState } from 'react';
 import axios from 'axios';
+import Order from './componants/Order/Order';
 
 
 function App() {
@@ -236,7 +237,28 @@ function App() {
       getDataTerms();
     }, [])
 
-    
+
+
+    const [nameItemEn, setnameItemEn] = useState('');
+    const [nameItemAr, setnameItemAr] = useState('');
+    const [typeItemEn, settypeItemEn] = useState('');
+    const [typeItemAr, settypeItemAr] = useState('');
+
+    const showNameEn = (nameItemEn) => {
+      setnameItemEn(nameItemEn);
+    };
+
+    const showNameAr = (nameItemAr) => {
+      setnameItemAr(nameItemAr);
+    };
+
+    const showTypeEn = (typeItemEn) => {
+      settypeItemEn(typeItemEn);
+    };
+
+    const showTypeAr = (typeItemAr) => {
+      settypeItemAr(typeItemAr);
+    };
 
 
   return (
@@ -275,9 +297,9 @@ function App() {
               <i className="fa fa-spinner fa-5x fa-spin"></i>
             </div>} />
 
-          <Route path='services/:id' element={<Service baseURL={baseURL}/>} />
+          <Route path='services/:id' element={<Service baseURL={baseURL} showNameEn={showNameEn} showNameAr={showNameAr} showTypeEn={showTypeEn} showTypeAr={showTypeAr}/>} />
 
-          <Route path='products/:id' element={<Product baseURL={baseURL}/>} />
+          <Route path='products/:id' element={<Product baseURL={baseURL} showNameEn={showNameEn} showNameAr={showNameAr} showTypeEn={showTypeEn} showTypeAr={showTypeAr}/>} />
 
           <Route path='projects/:id' element={<Project baseURL={baseURL}/>} />
 
@@ -286,6 +308,8 @@ function App() {
           <Route path='join' element={<Join baseURL={baseURL}/>} />
 
           <Route path='contact' element={<Contact baseURL={baseURL}/>} />
+
+          <Route path='order' element={<Order baseURL={baseURL} showNameEn={nameItemEn} showNameAr={nameItemAr} showTypeEn={typeItemEn} showTypeAr={typeItemAr}/>} />
 
           <Route path='faq' element={Object.keys(fetchFaqs).length > 0 ? <Faq fetchFaqs={fetchFaqs}/> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>

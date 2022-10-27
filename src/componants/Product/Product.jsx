@@ -9,7 +9,9 @@ import axios from 'axios';
 // import productImg from '../images/products/Group 170.png';
 
 
-export default function Product({baseURL}) {
+export default function Product({baseURL, showNameEn, showNameAr, showTypeEn, showTypeAr}) {
+
+
 
 
     useEffect(() => {
@@ -103,7 +105,12 @@ export default function Product({baseURL}) {
                         </div>
                     </div>
                     <div className="buttons text-center mt-3 wow fadeInUpBig">
-                        <Link to="../Contact" className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
+                        <Link to="../order" onClick={() => {
+                            showNameEn(fetchProductData.product.header)
+                            showNameAr(fetchProductData.product.headerAr)
+                            showTypeEn('PRODUCT')
+                            showTypeAr('منتـــج')
+                        }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                     </div>
                 </div>
             </section>
