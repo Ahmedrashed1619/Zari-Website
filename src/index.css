@@ -735,7 +735,7 @@ video {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 500px) and (max-width: 540px) {
 
   .show-details {
       padding-bottom: 8px;
@@ -749,6 +749,17 @@ video {
   .caption-details p {
       font-size: 12px !important;
       margin-bottom: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .caption-details h2 {
+      margin-bottom: 1.5rem !important;
+  }
+
+  .caption-details p {
+      display: none;
   }
 }
 

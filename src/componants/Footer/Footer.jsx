@@ -163,7 +163,7 @@ export default function Footer() {
                                 </div>
                                 <div className="d-flex justify-content-start align-items-center">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>
-                                    <a rel='noreferrer' target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=VpCqJKjfgRtcdLcBmXhbSjczqWqGtTzCcxbpGJKzzKgljwnZwSRflMqjZxxLrwCghhGNMlq">info@zarisolution.com</a>
+                                    <a rel='noreferrer' target="_blank" href="mailto: info@zarisolution.com">info@zarisolution.com</a>
                                 </div>
                             </div>
                         </div>

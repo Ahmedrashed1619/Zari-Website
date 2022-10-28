@@ -40,33 +40,9 @@ export default function Order({baseURL, showNameEn, showNameAr, showTypeEn, show
     const [loadind, setLoadind] = useState(false);
 
 
-    function getUserDataCOMpanyName(e) {
+    function getUserData(e) {
         let myUser = {...user};
-        myUser.CompanyName = e.target.value;
-        myUser.ItemName = showNameEn;
-        myUser.ItemType = showTypeEn;
-        setUser(myUser);
-    }
-
-    function getUserDataCOMpanyPhone(e) {
-        let myUser = {...user};
-        myUser.CompanyPhone = e.target.value;
-        myUser.ItemName = showNameEn;
-        myUser.ItemType = showTypeEn;
-        setUser(myUser);
-    }
-
-    function getUserDataCOMpanyEmail(e) {
-        let myUser = {...user};
-        myUser.CompanyEmail = e.target.value;
-        myUser.ItemName = showNameEn;
-        myUser.ItemType = showTypeEn;
-        setUser(myUser);
-    }
-
-    function getUserDataNote(e) {
-        let myUser = {...user};
-        myUser.Note = e.target.value;
+        myUser[e.target.name] = e.target.value;
         myUser.ItemName = showNameEn;
         myUser.ItemType = showTypeEn;
         setUser(myUser);
@@ -129,16 +105,16 @@ export default function Order({baseURL, showNameEn, showNameAr, showTypeEn, show
                                 <input type="text" className="form-control p-2 wow fadeInRight" placeholder={isEng ? showTypeEn : showTypeAr} data-wow-duration="1.5s" disabled required name="ItemType" id="ItemType"/>
 
                                 <label className="mt-2 mb-1 wow fadeInRight" data-wow-duration="1.5s" htmlFor="CompanyName">{isEng ? 'Company Name' : 'إســـم الشركــــة'}</label>
-                                <input onChange={getUserDataCOMpanyName} type="text" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" required name="CompanyName" id="CompanyName"/>
+                                <input onChange={getUserData} type="text" className="form-control p-2 wow fadeInRight" data-wow-duration="1.5s" required name="CompanyName" id="CompanyName"/>
 
                                 <label className=" mt-2 mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="CompanyPhone">{isEng ? 'Phone Number' : 'رقــم الهاتـــف'}</label>
-                                <input onChange={getUserDataCOMpanyPhone} type="tel" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="CompanyPhone" id="CompanyPhone"/>
+                                <input onChange={getUserData} type="tel" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="CompanyPhone" id="CompanyPhone"/>
 
                                 <label className=" mt-2 mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="CompanyEmail">{isEng ? 'Company Email' : 'البريــد الإلكترونــــي'}</label>
-                                <input onChange={getUserDataCOMpanyEmail} type="email" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="CompanyEmail" id="CompanyEmail"/>
+                                <input onChange={getUserData} type="email" className="form-control p-2 wow fadeInLeft" data-wow-duration="1.5s" required name="CompanyEmail" id="CompanyEmail"/>
 
                                 <label className=" mt-2 mb-1 wow fadeInRight" data-wow-duration="1.5s" htmlFor="Note">{isEng ? 'Note' : 'ملاحظــــة'}</label>
-                                <input onChange={getUserDataNote} type="text" className="form-control p-2 mb-2 wow fadeInRight" data-wow-duration="1.5s" required name="Note" id="Note"/>
+                                <input onChange={getUserData} type="text" className="form-control p-2 mb-2 wow fadeInRight" data-wow-duration="1.5s" required name="Note" id="Note"/>
 
                                 {message.length > 0 ? <p id="alertSave" className={`alert ${message === 'Success Send Data' || message === 'تم ارسال البيانات بنجاح' ? 'alert-success' : 'alert-danger'} fs-6 py-2 mb-0 mt-3 w-50 text-center mx-auto`}>{message}</p> : ''}
 

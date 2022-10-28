@@ -30,7 +30,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
 
     const changeLink = () => {
         if ($('.caption-details h2').text() === fetchProjects[0].title || $('.caption-details h2').text() === fetchProjects[0].titleAr) {
-            if(isEng === false) {
+            if(isEng === false && $('.caption-details h2').text() === fetchProjects[0].title) {
                 $('.caption-details p').text(fetchProjects[0].text);
             }
             else{
@@ -39,35 +39,35 @@ export default function Navbar({fetchNav , fetchProjects}) {
             $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[0].id}`);
         }
     
-        else if ($('.caption-details h2').text() === fetchProjects[1].title || $('.caption-details h2').text() === fetchProjects[1].titleAr) {
-            if(isEng === false) {
-                $('.caption-details p').text(fetchProjects[1].text);
-            }
-            else{
-                $('.caption-details p').text(fetchProjects[1].textAr);
-            }
-            $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[1].id}`);
-        }
+        // else if ($('.caption-details h2').text() === fetchProjects[1].title || $('.caption-details h2').text() === fetchProjects[1].titleAr) {
+        //     if(isEng === false && $('.caption-details h2').text() === fetchProjects[1].title) {
+        //         $('.caption-details p').text(fetchProjects[1].text);
+        //     }
+        //     else{
+        //         $('.caption-details p').text(fetchProjects[1].textAr);
+        //     }
+        //     $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[1].id}`);
+        // }
     
-        else if ($('.caption-details h2').text() === fetchProjects[2].title || $('.caption-details h2').text() === fetchProjects[2].titleAr) {
-            if(isEng === false) {
-                $('.caption-details p').text(fetchProjects[2].text);
-            }
-            else{
-                $('.caption-details p').text(fetchProjects[2].textAr);
-            }
-            $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[2].id}`);
-        }
+        // else if ($('.caption-details h2').text() === fetchProjects[2].title || $('.caption-details h2').text() === fetchProjects[2].titleAr) {
+        //     if(isEng === false && $('.caption-details h2').text() === fetchProjects[2].title) {
+        //         $('.caption-details p').text(fetchProjects[2].text);
+        //     }
+        //     else{
+        //         $('.caption-details p').text(fetchProjects[2].textAr);
+        //     }
+        //     $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[2].id}`);
+        // }
     
-        else if ($('.caption-details h2').text() === fetchProjects[3].title || $('.caption-details h2').text() === fetchProjects[3].titleAr) {
-            if(isEng === false) {
-                $('.caption-details p').text(fetchProjects[3].text);
-            }
-            else{
-                $('.caption-details p').text(fetchProjects[3].textAr);
-            }
-            $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[3].id}`);
-        }
+        // else if ($('.caption-details h2').text() === fetchProjects[3].title || $('.caption-details h2').text() === fetchProjects[3].titleAr) {
+        //     if(isEng === false && $('.caption-details h2').text() === fetchProjects[3].title) {
+        //         $('.caption-details p').text(fetchProjects[3].text);
+        //     }
+        //     else{
+        //         $('.caption-details p').text(fetchProjects[3].textAr);
+        //     }
+        //     $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[3].id}`);
+        // }
     }
 
 
