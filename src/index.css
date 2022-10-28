@@ -2599,6 +2599,17 @@ textarea{
     margin-right: auto;
     margin-left: auto;
   }
+
+  .form-join .buttons button, .form-contact .buttons button{
+    margin-top: 1rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-join .buttons button, .form-contact .buttons button{
+    font-size: 15px;
+  }
 }
 
 

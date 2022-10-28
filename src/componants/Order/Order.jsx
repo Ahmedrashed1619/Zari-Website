@@ -95,7 +95,7 @@ export default function Order({baseURL, showNameEn, showNameAr, showTypeEn, show
                                 <p className="mx-auto pb-0 mb-0 text-black">{isEng ? 'Your email address will not be published.' : 'لن يتم نشر عنوان بريدك الإلكتروني.'}</p>
                             </div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-lg-6">
                             <form encType="multipart/form-data" onSubmit={registerContactForm} className="p-5 form">
 
                                 <label className="mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="ItemName">{isEng ? 'Order Name' : 'إســــم الطلـــب'}</label>

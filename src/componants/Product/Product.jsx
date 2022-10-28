@@ -108,7 +108,7 @@ export default function Product({baseURL, showNameEn, showNameAr, showTypeEn, sh
                         <Link to="../order" onClick={() => {
                             showNameEn(fetchProductData.product.header)
                             showNameAr(fetchProductData.product.headerAr)
-                            showTypeEn('PRODUCT')
+                            showTypeEn('Product')
                             showTypeAr('منتـــج')
                         }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                     </div>

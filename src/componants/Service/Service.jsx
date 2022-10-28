@@ -89,7 +89,7 @@ export default function Service({baseURL, showNameEn, showNameAr, showTypeEn, sh
                     <Link to="../order" onClick={() => {
                         showNameEn(fetchServiceData.service.header)
                         showNameAr(fetchServiceData.service.headerAr)
-                        showTypeEn('SERVICE')
+                        showTypeEn('Service')
                         showTypeAr('خدمـــة')
                     }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
                 </div>
