@@ -56,8 +56,10 @@ export default function Product({baseURL, showNameEn, showNameAr, showTypeEn, sh
 
     useEffect(() => {
         axios.get(`${baseURL}product/${id}`)
+        .then($('.dropdown.products-toggle .dropdown-menu').addClass('d-none'))
         .then((res) => {
             setFetchProductData(res.data);
+            $('.dropdown.products-toggle .dropdown-menu').removeClass('d-none');
         })
     }, [id]);
 

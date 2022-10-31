@@ -37,8 +37,10 @@ export default function Service({baseURL, showNameEn, showNameAr, showTypeEn, sh
 
     useEffect(() => {
         axios.get(`${baseURL}service/${id}`)
+        .then($('.dropdown.services-toggle .dropdown-menu').addClass('d-none'))
         .then((res) => {
             setFetchServiceData(res.data);
+            $('.dropdown.services-toggle .dropdown-menu').removeClass('d-none');
         })
     }, [id]);
 

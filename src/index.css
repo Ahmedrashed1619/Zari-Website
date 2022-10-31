@@ -309,8 +309,8 @@ video {
 }
 
 .caption p,
-.caption-about p {
-  /* width: 90%; */
+.home-about .caption-about p {
+  width: 90%;
   font-size: 18px;
   color: var(--secondColor);
   line-height: 26px;
@@ -793,6 +793,7 @@ video {
 
 .home-previous .previo img {
   width: 100px;
+  height: 100px;
   transition: all 0.5s;
 }
 
@@ -1118,7 +1119,8 @@ video {
 .part {
   background-color: #f3f3f3;
   box-shadow: #8d8d8d;
-  height: 400px;
+  /* height: 400px; */
+  padding-bottom: 10px;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.5s;
@@ -1142,6 +1144,11 @@ video {
 
 .part .caption-part {
   margin-left: 8px;
+}
+
+.caption-part p {
+  min-height: 100px;
+  max-height: 100px;
 }
 
 .caption-part p, .caption-part .buttons {
@@ -1197,6 +1204,11 @@ video {
       margin-left: auto;
   }
 
+  .caption-part p {
+    min-height: auto;
+    max-height: 90px;
+  }
+
   .last-card {
       margin-top: 1rem;
   }
@@ -1234,9 +1246,13 @@ video {
   font-weight: 600;
 }
 
+.logo-footer p{
+  width: 90%;
+}
+
 .icons-footer a {
-  /* width: 40px;
-  height: 40px; */
+  width: 40px;
+  height: 40px;
   padding: 5px;
   background-color: #fff;
   display: flex;
@@ -1308,6 +1324,8 @@ video {
 }
 
 .navigate span {
+  width: 20px;
+  height: 20px;
   padding: 5px;
   background-color: #fff;
   border-radius: 50%;
@@ -1366,6 +1384,14 @@ video {
   background-repeat: no-repeat;
 }
 
+.main-title-page h2{
+  transition: all 0.5s;
+}
+
+.main-title-page h2:hover {
+  color: var(--mainColor) !important;
+}
+
 .layer-img {
   background-color: rgba(0, 0, 0, 0.5);
   height: 50vh;
@@ -1416,7 +1442,7 @@ video {
 
 .about .caption-about p {
   font-size: 18px;
-  color: #000;
+  color: var(--secondColor);
   line-height: 24px;
   font-weight: 500;
 }
@@ -1451,8 +1477,8 @@ video {
 
 .mission-goals p.p1 {
   transition: all 0.5s;
-  border-left: 2px solid var(--secondColor);
-  color: #000;
+  border-left: 2px solid;
+  /* color: #000; */
   font-weight: 500;
   animation-name: paragraph1;
   animation-duration: 3s;
@@ -1461,8 +1487,8 @@ video {
 
 .mission-goals p.p2 {
   transition: all 0.5s;
-  border-left: 2px solid var(--secondColor);
-  color: #000;
+  border-left: 2px solid;
+  /* color: #000; */
   font-weight: 500;
   animation-name: paragraph2;
   animation-duration: 3s;
@@ -1560,12 +1586,12 @@ video {
 @keyframes paragraph1 {
   0% {
       border-left-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 
   50% {
       border-left-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 
   51% {
@@ -1582,12 +1608,12 @@ video {
 @keyframes paragraphArabic1 {
   0% {
       border-right-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 
   50% {
       border-right-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 
   51% {
@@ -1614,12 +1640,12 @@ video {
 
   51% {
       border-left-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 
   100% {
       border-left-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 }
 
@@ -1636,12 +1662,12 @@ video {
 
   51% {
     border-right-color: var(--secondColor);
-    color: #000
+    color: var(--secondColor)
   }
 
   100% {
       border-right-color: var(--secondColor);
-      color: #000
+      color: var(--secondColor)
   }
 }
 
@@ -2272,7 +2298,7 @@ video {
 }
 
 .headings h5 span {
-  /* padding: 5px; */
+  padding: 5px;
   width: 22px;
   height: 22px;
   background-color: var(--mainColor);

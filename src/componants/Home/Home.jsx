@@ -3,12 +3,12 @@ import WOW from 'wowjs';
 import websiteDesign from '../images/home/website design.png';
 import mobileApp from '../images/home/mobile app.png';
 import zariExpress from '../images/home/Group 32.png';
-import goDaddy from '../images/home/7.png';
-import year10 from '../images/home/5.png';
-import stc from '../images/home/4.png';
-import ovhCloud from '../images/home/3.png';
-import oddo from '../images/home/2 (1).png';
-import hostgator from '../images/home/1.png';
+// import goDaddy from '../images/home/7.png';
+// import year10 from '../images/home/5.png';
+// import stc from '../images/home/4.png';
+// import ovhCloud from '../images/home/3.png';
+// import oddo from '../images/home/2 (1).png';
+// import hostgator from '../images/home/1.png';
 import vector from '../images/home/Vector 5 (1).png';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -56,36 +56,36 @@ export default function Home({ fetchHome }) {
   }, []);
 
 
-  const clients = {
-    items: 6,
-    responsiveClass: true,
-    nav: false,
-    dots: false,
-    loop: true,
-    autoplay: true,
-    mouseDrag: false,
-    touchDrag: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 2,
-      },
-      700: {
-        items: 3,
-      },
-      900: {
-        items: 4
-      },
-      1000: {
-        items: 5,
-      },
-      1200: {
-        items: 6,
-      }
-    },
-  }
+  // const clients = {
+  //   items: 6,
+  //   responsiveClass: true,
+  //   nav: false,
+  //   dots: false,
+  //   loop: true,
+  //   autoplay: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     400: {
+  //       items: 2,
+  //     },
+  //     700: {
+  //       items: 3,
+  //     },
+  //     900: {
+  //       items: 4
+  //     },
+  //     1000: {
+  //       items: 5,
+  //     },
+  //     1200: {
+  //       items: 6,
+  //     }
+  //   },
+  // }
 
   const options = {
     items: 1,
@@ -397,7 +397,7 @@ export default function Home({ fetchHome }) {
               <div className="col-lg-7">
                 <div className="caption wow fadeInLeft" data-wow-duration="1.5s">
                   <h5 className="mb-4 main-color fw-bold wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.header : fetchHome.top.headerAr}</h5>
-                  <h1 className="fw-bold mb-4 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.title : fetchHome.top.titleAr}</h1>
+                  <h1 className="fw-bold text-black mb-4 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.title : fetchHome.top.titleAr}</h1>
                   <p className="mb-4 py-1 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.top.text : fetchHome.top.textAr}</p>
                   <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                     <Link to='../Contact' className="btn black-btn py-3 px-5">{isEng ? 'Get Started' : 'ابدأ معنــــا'}</Link>

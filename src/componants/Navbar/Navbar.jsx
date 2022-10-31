@@ -155,7 +155,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                     )) : ''}
                                 </ul>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown products-toggle">
                                 <NavLink className="nav-link dropdown-toggle products-link" to="products" role="button"
                                     aria-expanded="false">
                                     {isEng ? 'Products' : 'المنتجــات'}
@@ -166,7 +166,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                                     )) : ''}
                                 </ul>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown projects-toggle">
                                 <NavLink className="nav-link dropdown-toggle projects-link" to="projects" role="button"
                                     aria-expanded="false">
                                     {isEng ? 'Projects' : 'المشـاريـع'}
