@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Zari-Website/static/css/main.38985177.css",
-    "main.js": "/Zari-Website/static/js/main.ef6ff30a.js",
+    "main.css": "/Zari-Website/static/css/main.ed546603.css",
+    "main.js": "/Zari-Website/static/js/main.3b6fa943.js",
     "static/js/787.e0e709d5.chunk.js": "/Zari-Website/static/js/787.e0e709d5.chunk.js",
     "static/media/Rectangle 194.png": "/Zari-Website/static/media/Rectangle 194.f47cc5fc515a3167cc2c.png",
     "static/media/left.png": "/Zari-Website/static/media/left.2564e9881ea21acf5fae.png",
@@ -18,19 +18,15 @@
     "static/media/fa-regular-400.ttf": "/Zari-Website/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
     "static/media/Group 32.png": "/Zari-Website/static/media/Group 32.496afbbc6bf60ee24e91.png",
     "static/media/fa-regular-400.woff2": "/Zari-Website/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
-    "static/media/7.png": "/Zari-Website/static/media/7.c43d2a08f0c90601f15b.png",
-    "static/media/1.png": "/Zari-Website/static/media/1.40fdc0af77db7f086120.png",
-    "static/media/5.png": "/Zari-Website/static/media/5.2644679e1e56036e54ce.png",
-    "static/media/3.png": "/Zari-Website/static/media/3.6e1969a28c4039b2cf88.png",
     "static/media/fa-v4compatibility.ttf": "/Zari-Website/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/Zari-Website/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Zari-Website/index.html",
-    "main.38985177.css.map": "/Zari-Website/static/css/main.38985177.css.map",
-    "main.ef6ff30a.js.map": "/Zari-Website/static/js/main.ef6ff30a.js.map",
+    "main.ed546603.css.map": "/Zari-Website/static/css/main.ed546603.css.map",
+    "main.3b6fa943.js.map": "/Zari-Website/static/js/main.3b6fa943.js.map",
     "787.e0e709d5.chunk.js.map": "/Zari-Website/static/js/787.e0e709d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38985177.css",
-    "static/js/main.ef6ff30a.js"
+    "static/css/main.ed546603.css",
+    "static/js/main.3b6fa943.js"
   ]
 }
