@@ -671,7 +671,7 @@ video {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1100px) {
-  .caption-details p {
+  .show-details .caption-details p {
     font-size: 16px !important;
   }
 }
@@ -681,7 +681,7 @@ video {
       width: 50%;
   }
 
-  .caption-details p {
+  .show-details .caption-details p {
       font-size: 20px;
   }
 }
@@ -700,8 +700,16 @@ video {
       width: 75%;
   }
 
-  .caption-details p {
+  .show-details .caption-details p {
       font-size: 16px;
+  }
+
+  .bg-black .row {
+    flex-direction: column-reverse;
+  }
+
+  .caption-details-products p {
+    width: 90%;
   }
 }
 
@@ -719,12 +727,32 @@ video {
       width: 100%;
   }
 
+  .caption-details-products {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg-black .row {
+    flex-direction: column-reverse;
+  }
+
+  .caption-details-products p {
+    width: 90%;
+  }
+
+  .caption-details-products .buttons a{
+    width: 50% !important;
+    font-size: 16px;
+    padding: 0.75rem 1.5rem !important;
+  }
+
   .caption-details h2 {
       font-size: 24px;
       margin-bottom: 0.75rem !important;
   }
 
-  .caption-details p {
+  .show-details .caption-details p {
       font-size: 15px;
       margin-bottom: 0.5rem !important;
   }
@@ -746,7 +774,7 @@ video {
       margin-bottom: 0.5rem !important;
   }
 
-  .caption-details p {
+  .show-details .caption-details p {
       font-size: 12px !important;
       margin-bottom: 0.5rem !important;
   }
@@ -758,7 +786,7 @@ video {
       margin-bottom: 1.5rem !important;
   }
 
-  .caption-details p {
+  .show-details .caption-details p {
       display: none;
   }
 }

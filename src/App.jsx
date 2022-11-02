@@ -264,16 +264,16 @@ function App() {
   return (
 
     <> 
-      <Navbar fetchNav={fetchNav} fetchProjects={fetchProjects} />
+      <Navbar fetchNav={fetchNav} fetchProjects={fetchProjects} fetchProducts={fetchProducts} />
 
       <Chat />
       <Routes>
 
-          <Route path='/' element={Object.keys(fetchHome).length > 0 ? <Home fetchHome={fetchHome} /> : <div id="ready">
+          <Route path='/' element={Object.keys(fetchHome).length && Object.keys(fetchProducts).length > 0 ? <Home fetchHome={fetchHome} fetchProducts={fetchProducts} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
             </div>} />
 
-          <Route path='home' element={Object.keys(fetchHome).length > 0 ? <Home fetchHome={fetchHome} /> : <div id="ready">
+          <Route path='home' element={Object.keys(fetchHome).length && Object.keys(fetchProducts).length > 0 ? <Home fetchHome={fetchHome} fetchProducts={fetchProducts} /> : <div id="ready">
               <i className="fa fa-spinner fa-5x fa-spin"></i>
             </div>} />
 

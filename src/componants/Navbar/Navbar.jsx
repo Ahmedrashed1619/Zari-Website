@@ -9,7 +9,7 @@ import WOW from 'wowjs';
 
 
 
-export default function Navbar({fetchNav , fetchProjects}) {
+export default function Navbar({fetchNav , fetchProjects, fetchProducts}) {
 
 
     useEffect(() => {
@@ -68,6 +68,153 @@ export default function Navbar({fetchNav , fetchProjects}) {
         //     }
         //     $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[3].id}`);
         // }
+    }
+
+
+
+    const productsArray = [];
+
+    if(fetchProducts[0]){
+      fetchProducts[0].map((productItem) => {
+          productsArray.push(productItem);
+      });
+    }
+
+    if(fetchProducts[1]){
+        fetchProducts[1].map((productItem) => {
+            productsArray.push(productItem);
+      });
+    }
+
+    if(fetchProducts[2]){
+        fetchProducts[2].map((productItem) => {
+            productsArray.push(productItem);
+        });
+    }
+
+    if(fetchProducts[3]){
+        fetchProducts[3].map((productItem) => {
+            productsArray.push(productItem);
+        });
+    }
+
+    if(fetchProducts[4]){
+      fetchProducts[4].map((productItem) => {
+          productsArray.push(productItem);
+      });
+    }
+
+
+    const changeText = () => {
+        if(isEng) {
+            $('.bg-black .row').attr('dir', 'rtl');
+            $('.bg-black .row .caption-details-products').addClass('text-end');
+            $('.bg-black .row .caption-details-products').removeClass('text-start');
+            if(productsArray[0]) {
+                $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].titleAr);
+                $('.bg-black .row .caption-details-products p.one').text(productsArray[0].textAr);
+              }
+              if(productsArray[1]) {
+                $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].titleAr);
+                $('.bg-black .row .caption-details-products p.two').text(productsArray[1].textAr);
+              }
+              if(productsArray[2]) {
+                $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].titleAr);
+                $('.bg-black .row .caption-details-products p.three').text(productsArray[2].textAr);
+              }
+              if(productsArray[3]) {
+                $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].titleAr);
+                $('.bg-black .row .caption-details-products p.four').text(productsArray[3].textAr);
+              }
+              if(productsArray[4]) {
+                $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].titleAr);
+                $('.bg-black .row .caption-details-products p.five').text(productsArray[4].textAr);
+              }
+              if(productsArray[5]) {
+                $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].titleAr);
+                $('.bg-black .row .caption-details-products p.six').text(productsArray[5].textAr);
+              }
+              if(productsArray[6]) {
+                $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].titleAr);
+                $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].textAr);
+              }
+              if(productsArray[7]) {
+                $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].titleAr);
+                $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].textAr);
+              }
+              if(productsArray[8]) {
+                $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].titleAr);
+                $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].textAr);
+              }
+              if(productsArray[9]) {
+                $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].titleAr);
+                $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].textAr);
+              }
+              if(productsArray[10]) {
+                $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].titleAr);
+                $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].textAr);
+              }
+              if(productsArray[11]) {
+                $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].titleAr);
+                $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].textAr);
+              }
+            $('.bg-black .row .caption-details-products a').text('اقـرأ المزيــد');
+        }
+        else {
+            $('.bg-black .row').attr('dir', 'ltr');
+            $('.bg-black .row .caption-details-products').addClass('text-start');
+            $('.bg-black .row .caption-details-products').removeClass('text-end');
+            if(productsArray[0]) {
+                $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].title);
+                $('.bg-black .row .caption-details-products p.one').text(productsArray[0].text);
+              }
+              if(productsArray[1]) {
+                $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].title);
+                $('.bg-black .row .caption-details-products p.two').text(productsArray[1].text);
+              }
+              if(productsArray[2]) {
+                $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].title);
+                $('.bg-black .row .caption-details-products p.three').text(productsArray[2].text);
+              }
+              if(productsArray[3]) {
+                $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].title);
+                $('.bg-black .row .caption-details-products p.four').text(productsArray[3].text);
+              }
+              if(productsArray[4]) {
+                $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].title);
+                $('.bg-black .row .caption-details-products p.five').text(productsArray[4].text);
+              }
+              if(productsArray[5]) {
+                $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].title);
+                $('.bg-black .row .caption-details-products p.six').text(productsArray[5].text);
+              }
+              if(productsArray[6]) {
+                $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].title);
+                $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].text);
+              }
+              if(productsArray[7]) {
+                $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].title);
+                $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].text);
+              }
+              if(productsArray[8]) {
+                $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].title);
+                $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].text);
+              }
+              if(productsArray[9]) {
+                $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].title);
+                $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].text);
+              }
+              if(productsArray[10]) {
+                $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].title);
+                $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].text);
+              }
+              if(productsArray[11]) {
+                $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].title);
+                $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].text);
+              }
+            $('.bg-black .row .caption-details-products a').text('Read More');
+
+        }
     }
 
 
@@ -194,6 +341,7 @@ export default function Navbar({fetchNav , fetchProjects}) {
                             <div className="language py-2" onClick={() => {
                                 changeLang();
                                 changeLink();
+                                changeText();
                             }}>
                                 <i className="fa-solid fa-globe fs-6"></i>
                                 <button className='py-1'>{isEng ? 'العـربـيــة' : 'English'}</button>
