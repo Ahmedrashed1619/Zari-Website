@@ -26,7 +26,7 @@ import Order from './componants/Order/Order';
 
 function App() {
 
-  let baseURL = 'https://zarimain.online/public/api/';
+  let baseURL = 'https://zarimain.online/main/public/api/';
 
 
     useEffect(() => {

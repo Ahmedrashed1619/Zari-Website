@@ -75,15 +75,15 @@ export default function Navbar({fetchNav , fetchProjects, fetchProducts}) {
     const productsArray = [];
 
     if(fetchProducts[0]){
-      fetchProducts[0].map((productItem) => {
-          productsArray.push(productItem);
-      });
+        fetchProducts[0].map((productItem) => {
+            productsArray.push(productItem);
+        });
     }
 
     if(fetchProducts[1]){
         fetchProducts[1].map((productItem) => {
             productsArray.push(productItem);
-      });
+        });
     }
 
     if(fetchProducts[2]){
@@ -218,6 +218,15 @@ export default function Navbar({fetchNav , fetchProjects, fetchProducts}) {
     }
 
 
+    const closeNavbar = () => {
+        if(isActive === true && $('body, html').width() < 992) {
+            setActive(!isActive)
+            $('.navbar .navbar-toggler').attr('aria-expanded', 'false');
+            $('.navbar .collapse').removeClass('show')
+        }
+    }
+
+
     function changeDir() {
         let width = $('body').width()
         if (isEng === false) {
@@ -286,55 +295,55 @@ export default function Navbar({fetchNav , fetchProjects, fetchProducts}) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className={`navbar-nav ${isEng ? 'me-auto' : 'ms-auto'} mb-2 mb-lg-0 ${isEng ? 'ms-0 ms-lg-3' : 'me-0 me-lg-3'} py-3 py-lg-0 fw-bold`}>
                             <li className="nav-item">
-                                <NavLink className="nav-link home" aria-current="page" to="home">{isEng ? 'Home' : 'الرئيسيــة'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link home" aria-current="page" to="home">{isEng ? 'Home' : 'الرئيسيــة'}</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link about" to="about">{isEng ? 'About' : 'من نحـن'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link about" to="about">{isEng ? 'About' : 'من نحـن'}</NavLink>
                             </li>
                             <li className="nav-item dropdown services-toggle">
-                                <NavLink className="nav-link dropdown-toggle services-link" to="services" role="button"
+                                <NavLink onClick={closeNavbar} className="nav-link dropdown-toggle services-link" to="services" role="button"
                                     aria-expanded="false">
                                     {isEng ? 'Services' : 'الخدمـات'}
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.services.map((service, i) => (
-                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={service.route}>{isEng ? service.title : service.titleAr}</Link></li>
+                                        <li key={i}><Link onClick={closeNavbar} className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={service.route}>{isEng ? service.title : service.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
                             <li className="nav-item dropdown products-toggle">
-                                <NavLink className="nav-link dropdown-toggle products-link" to="products" role="button"
+                                <NavLink onClick={closeNavbar} className="nav-link dropdown-toggle products-link" to="products" role="button"
                                     aria-expanded="false">
                                     {isEng ? 'Products' : 'المنتجــات'}
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.products.map((product, i) => (
-                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={product.route}>{isEng ? product.title : product.titleAr}</Link></li>
+                                        <li key={i}><Link onClick={closeNavbar} className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={product.route}>{isEng ? product.title : product.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
                             <li className="nav-item dropdown projects-toggle">
-                                <NavLink className="nav-link dropdown-toggle projects-link" to="projects" role="button"
+                                <NavLink onClick={closeNavbar} className="nav-link dropdown-toggle projects-link" to="projects" role="button"
                                     aria-expanded="false">
                                     {isEng ? 'Projects' : 'المشـاريـع'}
                                 </NavLink>
                                 <ul className="dropdown-menu">
                                     {Object.keys(fetchNav).length > 0 ? fetchNav.projects.map((project, i) => (
-                                        <li key={i}><Link className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={project.route}>{isEng ? project.title : project.titleAr}</Link></li>
+                                        <li key={i}><Link onClick={closeNavbar} className={`dropdown-item ${isEng ? 'text-en' : 'text-ar'}`} to={project.route}>{isEng ? project.title : project.titleAr}</Link></li>
                                     )) : ''}
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link previous" to="previous">{isEng ? 'Works' : 'الأعمــال'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link previous" to="previous">{isEng ? 'Works' : 'الأعمــال'}</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="share">{isEng ? 'Share your project' : 'شارك مشروعــك'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link" to="share">{isEng ? 'Share your project' : 'شارك مشروعــك'}</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link join" to="join">{isEng ? 'Join Us' : 'إنضـم إلينــا'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link join" to="join">{isEng ? 'Join Us' : 'إنضـم إلينــا'}</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link contact" to="contact">{isEng ? 'Contact Us' : 'تواصل معنــا'}</NavLink>
+                                <NavLink onClick={closeNavbar} className="nav-link contact" to="contact">{isEng ? 'Contact Us' : 'تواصل معنــا'}</NavLink>
                             </li>
                         </ul>
                         <div className="custome d-flex justify-content-center align-items-center pb-4 pb-lg-0">
@@ -342,6 +351,7 @@ export default function Navbar({fetchNav , fetchProjects, fetchProducts}) {
                                 changeLang();
                                 changeLink();
                                 changeText();
+                                closeNavbar();
                             }}>
                                 <i className="fa-solid fa-globe fs-6"></i>
                                 <button className='py-1'>{isEng ? 'العـربـيــة' : 'English'}</button>
